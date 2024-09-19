@@ -1,0 +1,12 @@
+:root {
+    --black-color: rgb(0, 0, 0);
+    --white-color: rgb(255, 255, 255);
+    --dark-color: rgb(47, 47, 47);
+    --blue-color: rgb(0, 89, 255);
+    --green-color: rgb(0, 182, 124);
+    --primary-color-1: rgb(28, 0, 128);
+    --primary-color-2: rgb(167, 0, 150);
+    --primary-color-3: rgb(255, 0, 94);
+    --primary-color-4: rgb(255, 120, 0);
+    --primary-color-5: rgb(255, 187, 0);
+}

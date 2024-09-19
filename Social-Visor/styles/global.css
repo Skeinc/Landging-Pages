@@ -1,11 +1,89 @@
+@import 'components/button/button.css';
+@import 'base/variables.css';
 @import 'base/normalize.css';
 @import 'base/reset.css';
 @import 'base/fonts.css';
+@import 'base/flex.css';
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'TT Norms', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white-color);
+    color: var(--dark-color);
     box-sizing: border-box;
+}
+
+.page-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.08);
+}
+
+.header-container {
+    width: 100%;
+    height: auto;
+    padding: 16px 0px;
+    position: relative;
+}
+
+.header-container__row {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20%;
+    gap: 10px;
+}
+
+.brand {
+    width: auto;
+    height: auto;
+}
+
+.brand-image {
+    width: auto;
+    height: 32px;
+}
+
+.menu {
+    width: auto;
+    height: auto;
+}
+
+.menu-list {
+    width: auto;
+    height: auto;
+    gap: 24px;
+}
+
+.menu-list__item {
+    width: auto;
+    height: auto;
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: var(--dark-color);
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: var(--blue-color);
+    }
+}
+
+.controllers {
+    width: auto;
+    height: auto;
+    gap: 10px;
 }
