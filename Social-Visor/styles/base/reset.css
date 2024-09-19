@@ -19,16 +19,42 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html {
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
-    text-size-adjust: none
+    text-size-adjust: none;
 }
 
 menu, ol, summary, ul {
-    list-style: none
+    list-style: none;
 }
 
 li {
     list-style-type: none;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+::-moz-placeholder {
+    color: unset;
+}
+::placeholder {
+    color: unset;
+}
+
+meter {
+    -webkit-appearance: revert;
+    -moz-appearance: revert;
+    appearance: revert;
+}
+
+::-webkit-details-marker {
+    display: none;
 }

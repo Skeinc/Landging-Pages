@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+pre {
+    font-family: monospace, monospace;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input, textarea {
+    -webkit-user-select: auto;
+    user-select: auto;
+}
+
+textarea {
+    white-space: revert;
+}
+
+:where(pre) {
+    all: revert;
+    box-sizing: border-box;
+}
+
+:where([hidden]) {
+    display: none;
+}
+
+:where([contenteditable]:not([contenteditable=false])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    -webkit-line-break: after-white-space;
+    overflow-wrap: break-word;
+    -webkit-user-select: auto;
+    user-select: auto;
+    line-break: auto;
+}
+
+:where([draggable=true]) {
+    -webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+    all: revert;
+    box-sizing: border-box;
+}
