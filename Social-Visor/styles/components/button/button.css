@@ -20,6 +20,27 @@
     }
 }
 
+.button-primary {
+    height: 52px;
+    background-color: var(--blue-color);
+    padding: auto 24px;
+
+    p {
+        color: var(--white-color);
+    }
+}
+
+.button-secondary {
+    height: 52px;
+    box-shadow: 0 0 0 1.5px var(--blue-color);
+    background-color: var(--white-color);
+    padding: auto 24px;
+
+    p {
+        color: var(--blue-color);
+    }
+}
+
 .button-header__primary {
     height: 48px;
     background-color: var(--blue-color);
