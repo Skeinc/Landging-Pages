@@ -16,14 +16,15 @@
 
     p {
         font-weight: 500;
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 19px;
     }
 }
 
 .button-primary {
-    height: 52px;
+    height: 51px;
     background-color: var(--blue-color);
-    padding: auto 24px;
+    padding: 0px 24px;
 
     p {
         color: var(--white-color);
@@ -31,7 +32,7 @@
 }
 
 .button-secondary {
-    height: 52px;
+    height: 49.5px;
     box-shadow: 0 0 0 1.5px var(--blue-color);
     background-color: var(--white-color);
     padding: auto 24px;
@@ -41,23 +42,37 @@
     }
 }
 
+.button-alternative {
+    height: 51px;
+    background-color: var(--white-color);
+    padding: 16px 24px;
+
+    p {
+        color: var(--blue-color);
+    }
+}
+
 .button-header__primary {
-    height: 48px;
+    height: 49px;
     background-color: var(--blue-color);
     padding: 16px 24px;
     
     p {
+        font-size: 14px;
+        line-height: 17px;
         color: var(--white-color);
     }
 }
 
 .button-header__secondary {
-    height: 48px;
+    height: 47.5px;
     box-shadow: 0 0 0 1.5px var(--blue-color);
     background-color: var(--white-color);
     padding: 16px 24px;
 
     p {
+        font-size: 14px;
+        line-height: 17px;
         color: var(--blue-color);
     }
 }
