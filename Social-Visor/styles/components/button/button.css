@@ -24,7 +24,7 @@
 .button-primary {
     height: 51px;
     background-color: var(--blue-color);
-    padding: 0px 24px;
+    padding: 16px 24px;
 
     p {
         color: var(--white-color);
@@ -35,7 +35,7 @@
     height: 49.5px;
     box-shadow: 0 0 0 1.5px var(--blue-color);
     background-color: var(--white-color);
-    padding: auto 24px;
+    padding: 16px 24px;
 
     p {
         color: var(--blue-color);
@@ -74,5 +74,31 @@
         font-size: 14px;
         line-height: 17px;
         color: var(--blue-color);
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        gap: 4px;
+    }
+
+    .button-primary {
+        height: 34px;
+        padding: 8px 16px;
+    }
+
+    .button-secondary {
+        height: 32.5px;
+        padding: 8px 16px;
+    }
+
+    .button-header__primary {
+        height: 34px;
+        padding: 8px 16px;
+    }
+
+    .button-header__secondary {
+        height: 32.5px;
+        padding: 8px 16px;
     }
 }
