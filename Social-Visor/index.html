@@ -22,12 +22,22 @@
                     </div>
 
                     <div class="controllers flex-row flex-align-center">
-                        <button type="button" class="button button-header__secondary flex-center-center">
+                        <button id="login-icon" type="button" class="button-icon flex-center-center">
+                            <img src="assets/icons/login-logout-arrow.svg" alt="Login icon">
+                        </button>
+
+                        <button id="login-button" type="button" class="button button-header__secondary flex-center-center">
                             <p>Войти</p>
                         </button>
 
                         <button type="button" class="button button-header__primary flex-center-center">
                             <p>Регистрация</p>
+                        </button>
+
+                        <button id="menu" type="button" class="button-icon flex-column flex-center-center" onclick="menuTogglerHandler()">
+                            <span id="menu-line-1" class="menu-line"></span>
+                            <span id="menu-line-2" class="menu-line"></span>
+                            <span id="menu-line-3" class="menu-line"></span>
                         </button>
                     </div>
                 </div>
@@ -42,32 +52,35 @@
 
                 <div class="hero-ellipse2"></div>
 
-                <div class="hero-container flex-row flex-center-center">
+                <div class="hero-container flex-row">
                     <div class="hero-container__information flex-column">
                         <h1 class="hero-title">С <span class="text-gradient">SocialVisor</span> вы видите больше, <span class="text-blue">чем другие!</span></h1>
                     
                         <div class="hero-media flex-row">
-                            <img src="assets/images/hero/employee-search-loupe.png" alt="Office, Work">
+                            <!-- Desktop, laptop -->
+                            <img class="hero-media__desktop" src="assets/images/hero/employee-search-loupe.png" alt="Office, Work">
 
-                            <img src="assets/images/hero/Vk, Vkontakte, Square.png" alt="Social media">
+                            <img class="hero-media__desktop" src="assets/images/hero/Vk, Vkontakte, Square.png" alt="Social media">
 
-                            <img src="assets/images/hero/search-list-position-results.png" alt="SEO">
+                            <img class="hero-media__desktop" src="assets/images/hero/search-list-position-results.png" alt="SEO">
 
-                            <img src="assets/images/hero/User,Profile.png" alt="User">
+                            <img class="hero-media__desktop" src="assets/images/hero/User,Profile.png" alt="User">
 
-                            <img src="assets/images/hero/user-profile-back.png" alt="User">
+                            <img class="hero-media__desktop" src="assets/images/hero/user-profile-back.png" alt="User">
 
-                            <img src="assets/images/hero/chart-star-circle.png" alt="SEO">
+                            <img class="hero-media__desktop" src="assets/images/hero/chart-star-circle.png" alt="SEO">
 
-                            <img src="assets/images/hero/chip-microchip-square-signal.png" alt="Hardware, Components">
+                            <img class="hero-media__desktop" src="assets/images/hero/chip-microchip-square-signal.png" alt="Hardware, Components">
 
-                            <img src="assets/images/hero/message-text-edit.png" alt="Interface, Essential">
+                            <img class="hero-media__desktop" src="assets/images/hero/message-text-edit.png" alt="Interface, Essential">
 
-                            <img src="assets/images/hero/brain.png" alt="Health, Medicine">
+                            <img class="hero-media__desktop" src="assets/images/hero/brain.png" alt="Health, Medicine">
                         </div>
 
                         <p class="hero-description">Освободите своё время для творчества и инноваций.<br>Мы предоставляем вам доступ к мощным инструментам, которые помогут реализовать ваши идеи и проекты.</p>
-                    
+                        
+                        <p class="hero-description__tablet">Освободите своё время для творчества и инноваций. Мы предоставляем вам доступ к мощным инструментам, которые помогут реализовать ваши идеи и проекты.</p>
+
                         <div class="hero-controllers flex-row">
                             <button type="button" class="button button-primary flex-center-center">
                                 <p>Попробуйте бесплатно</p>
@@ -82,33 +95,230 @@
                             <p class="hero-socialmedia__label">Поддерживаемые сети:</p>
 
                             <div class="hero-socialmedia__items flex-row flex-align-center">
-                                <img src="assets/icons/Vk.png" alt="VK icon">
+                                <img src="assets/icons/Vk.svg" alt="VK icon">
 
-                                <img src="assets/icons/TikTok.png" alt="TikTok icon">
+                                <img src="assets/icons/TikTok.svg" alt="TikTok icon">
 
-                                <img src="assets/icons/Zen.png" alt="Zen icon">
+                                <img src="assets/icons/Zen.svg" alt="Zen icon">
 
-                                <img src="assets/icons/Facebook.png" alt="Facebook icon">
+                                <img src="assets/icons/Facebook.svg" alt="Facebook icon">
 
-                                <img src="assets/icons/Twitch.png" alt="Twitch icon">
+                                <img src="assets/icons/Twitch.svg" alt="Twitch icon">
 
-                                <img src="assets/icons/tinder.png" alt="Tinder icon">
+                                <img src="assets/icons/tinder.svg" src alt="Tinder icon">
 
                                 <div class="socialmedia-soon flex-row flex-align-center">
-                                    <img class="timer-icon" src="assets/icons/clock-time-timer.png" alt="Timer icon">
+                                    <img class="timer-icon" src="assets/icons/clock-time-timer.svg" alt="Timer icon">
 
                                     <p>Скоро</p>
 
-                                    <img class="youtube-icon" src="assets/icons/Youtube.png" alt="Youtube icon">
+                                    <img class="youtube-icon" src="assets/icons/Youtube.svg" alt="Youtube icon">
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <div class="hero-container__images">
-                        <div class="tablet-container">
-                            <div class="ipad-pro">
-                                <div class="tablet-image"></div>
+            <!-- Metrics -->
+            <section class="metrics">
+                <div class="metrics-row flex-row">
+                    <!-- Metric 1 -->
+                    <div class="metrics-row__item flex-column">
+                        <div class="item-value flex-row flex-align-center">
+                            <img class="item-value__indicator" src="assets/icons/rectangle-green.svg" alt="Income icon">
+
+                            <p class="item-value__income">100%</p>
+                        </div>
+
+                        <div class="item-category flex-row flex-align-center">
+                            <img class="item-category__icon" src="assets/icons/Twitch.svg" alt="Metric icon">
+
+                            <p class="item-category__name">Прирост подписчиков</p>
+                        </div>
+
+                        <div class="item-author flex-row flex-align-center">
+                            <img class="item-author__image" src="assets/images/metrics/metrics-author-1.jpeg" alt="Author image">
+
+                            <div class="item-author__container flex-column">
+                                <p class="item-author__name">Kristin Watson</p>
+
+                                <p class="item-author__post">контент менеджер</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric 2 -->
+                    <div class="metrics-row__item flex-column">
+                        <div class="item-value flex-row flex-align-center">
+                            <img class="item-value__indicator" src="assets/icons/rectangle-green.svg" alt="Income icon">
+
+                            <p class="item-value__income">269%</p>
+                        </div>
+
+                        <div class="item-category flex-row flex-align-center">
+                            <img class="item-category__icon" src="assets/icons/TikTok.svg" alt="Metric icon">
+
+                            <p class="item-category__name">Увеличение продаж</p>
+                        </div>
+
+                        <div class="item-author flex-row flex-align-center">
+                            <img class="item-author__image" src="assets/images/metrics/metrics-author-2.jpeg" alt="Author image">
+
+                            <div class="item-author__container flex-column">
+                                <p class="item-author__name">Courtney Henry</p>
+
+                                <p class="item-author__post">PR специалист</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric 3 -->
+                    <div class="metrics-row__item flex-column">
+                        <div class="item-value flex-row flex-align-center">
+                            <img class="item-value__indicator" src="assets/icons/rectangle-green.svg" alt="Income icon">
+
+                            <p class="item-value__income">12%</p>
+                        </div>
+
+                        <div class="item-category flex-row flex-align-center">
+                            <img class="item-category__icon" src="assets/icons/Steam.svg" alt="Metric icon">
+
+                            <p class="item-category__name">Конверсия в покупателей</p>
+                        </div>
+
+                        <div class="item-author flex-row flex-align-center">
+                            <img class="item-author__image" src="assets/images/metrics/metrics-author-3.jpeg" alt="Author image">
+
+                            <div class="item-author__container flex-column">
+                                <p class="item-author__name">Bessie Cooper</p>
+
+                                <p class="item-author__post">контент менеджер</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric 4 -->
+                    <div class="metrics-row__item flex-column">
+                        <div class="item-value flex-row flex-align-center">
+                            <img class="item-value__indicator" src="assets/icons/rectangle-green.svg" alt="Income icon">
+
+                            <p class="item-value__income">85%</p>
+                        </div>
+
+                        <div class="item-category flex-row flex-align-center">
+                            <img class="item-category__icon" src="assets/icons/Youtube.svg" alt="Metric icon">
+
+                            <p class="item-category__name">Количество лайков</p>
+                        </div>
+
+                        <div class="item-author flex-row flex-align-center">
+                            <img class="item-author__image" src="assets/images/metrics/metrics-author-4.jpeg" alt="Author image">
+
+                            <div class="item-author__container flex-column">
+                                <p class="item-author__name">Jacob Jones</p>
+
+                                <p class="item-author__post">журналист</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric 5 -->
+                    <div class="metrics-row__item flex-column">
+                        <div class="item-value flex-row flex-align-center">
+                            <img class="item-value__indicator" src="assets/icons/rectangle-green.svg" alt="Income icon">
+
+                            <p class="item-value__income">4 часа</p>
+                        </div>
+
+                        <div class="item-category flex-row flex-align-center">
+                            <img class="item-category__icon" src="assets/icons/Vk.svg" alt="Metric icon">
+
+                            <p class="item-category__name">Сэкономленного времени в сутки</p>
+                        </div>
+
+                        <div class="item-author flex-row flex-align-center">
+                            <img class="item-author__image" src="assets/images/metrics/metrics-author-5.jpeg" alt="Author image">
+
+                            <div class="item-author__container flex-column">
+                                <p class="item-author__name">Kathryn Murphy</p>
+
+                                <p class="item-author__post">видео-блогер</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric 6 -->
+                    <div class="metrics-row__item flex-column">
+                        <div class="item-value flex-row flex-align-center">
+                            <img class="item-value__indicator" src="assets/icons/rectangle-green.svg" alt="Income icon">
+
+                            <p class="item-value__income">55%</p>
+                        </div>
+
+                        <div class="item-category flex-row flex-align-center">
+                            <img class="item-category__icon" src="assets/icons/Youtube.svg" alt="Metric icon">
+
+                            <p class="item-category__name">Прирост подписчиков</p>
+                        </div>
+
+                        <div class="item-author flex-row flex-align-center">
+                            <img class="item-author__image" src="assets/images/metrics/metrics-author-6.jpeg" alt="Author image">
+
+                            <div class="item-author__container flex-column">
+                                <p class="item-author__name">Brooklyn Simmons</p>
+
+                                <p class="item-author__post">инфлюенсер</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric 7 -->
+                    <div class="metrics-row__item flex-column">
+                        <div class="item-value flex-row flex-align-center">
+                            <img class="item-value__indicator" src="assets/icons/rectangle-green.svg" alt="Income icon">
+
+                            <p class="item-value__income">456%</p>
+                        </div>
+
+                        <div class="item-category flex-row flex-align-center">
+                            <img class="item-category__icon" src="assets/icons/Zen.svg" alt="Metric icon">
+
+                            <p class="item-category__name">Пользовательский рейтинг</p>
+                        </div>
+
+                        <div class="item-author flex-row flex-align-center">
+                            <img class="item-author__image" src="assets/images/metrics/metrics-author-7.jpeg" alt="Author image">
+
+                            <div class="item-author__container flex-column">
+                                <p class="item-author__name">Dianne Russell</p>
+
+                                <p class="item-author__post">инстаграм фотограф</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric 8 -->
+                    <div class="metrics-row__item flex-column">
+                        <div class="item-value flex-row flex-align-center">
+                            <img class="item-value__indicator" src="assets/icons/rectangle-green.svg" alt="Income icon">
+
+                            <p class="item-value__income">100%</p>
+                        </div>
+
+                        <div class="item-category flex-row flex-align-center">
+                            <img class="item-category__icon" src="assets/icons/Mail.svg" alt="Metric icon">
+
+                            <p class="item-category__name">Прирост подписчиков</p>
+                        </div>
+
+                        <div class="item-author flex-row flex-align-center">
+                            <img class="item-author__image" src="assets/images/metrics/metrics-author-8.jpeg" alt="Author image">
+
+                            <div class="item-author__container flex-column">
+                                <p class="item-author__name">Theresa Webb</p>
+
+                                <p class="item-author__post">контент менеджер</p>
                             </div>
                         </div>
                     </div>
@@ -119,5 +329,8 @@
         <!-- Footer -->
         <footer></footer>
     </div>
+
+    <!-- Scripts -->
+    <script src="scripts/menu.js"></script>
 </body>
 </html>

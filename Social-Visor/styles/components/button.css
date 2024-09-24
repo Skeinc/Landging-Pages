@@ -18,6 +18,28 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
+        font-family: 'TT Norms', sans-serif;
+    }
+}
+
+.button-icon {
+    width: auto;
+    height: auto;
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+
+    img {
+        transition: all 0.3s ease;
     }
 }
 
@@ -78,27 +100,49 @@
 }
 
 @media (max-width: 768px) {
-    .button {
-        gap: 4px;
-    }
-
-    .button-primary {
-        height: 34px;
-        padding: 8px 16px;
-    }
-
-    .button-secondary {
-        height: 32.5px;
-        padding: 8px 16px;
-    }
-
     .button-header__primary {
         height: 34px;
         padding: 8px 16px;
+
+        p {
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 
     .button-header__secondary {
         height: 32.5px;
+        padding: 8px 16px;
+
+        p {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .button {
+        gap: 4px;
+
+        p {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    .button-primary {
+        height: 33px;
+        padding: 8px 16px;
+    }
+
+    .button-secondary {
+        height: 31.5px;
+        padding: 8px 16px;
+    }
+
+    .button-alternative {
+        height: 33px;
         padding: 8px 16px;
     }
 }
