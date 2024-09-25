@@ -45,6 +45,7 @@
     width: 549px;
     height: auto;
     position: relative;
+    background: transparent;
     z-index: 3;
     gap: 24px;
 }
