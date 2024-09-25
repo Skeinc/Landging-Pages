@@ -24,7 +24,7 @@
     left: 473px;
     border-radius: 50%;
     background-color: rgba(0, 170, 255, 0.2);
-    /* filter: blur(130px); */
+    filter: blur(130px);
     z-index: 1;
     transition: all 0.3s ease;
 }
@@ -37,7 +37,7 @@
     left: 1098px;
     border-radius: 50%;
     background-color: rgba(0, 238, 255, 0.1);
-    /* filter: blur(130px); */
+    filter: blur(130px);
     z-index: 1;
     transition: all 0.3s ease;
 }
