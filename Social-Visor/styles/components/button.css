@@ -44,7 +44,7 @@
 }
 
 .button-primary {
-    height: 51px;
+    height: 52px;
     background-color: var(--blue-color);
     padding: 16px 24px;
 
@@ -54,7 +54,7 @@
 }
 
 .button-secondary {
-    height: 49.5px;
+    height: 50.5px;
     box-shadow: 0 0 0 1.5px var(--blue-color);
     background-color: var(--white-color);
     padding: 16px 24px;
@@ -65,7 +65,38 @@
 }
 
 .button-alternative {
+    height: 52px;
+    background-color: var(--white-color);
+    padding: 16px 24px;
+
+    p {
+        color: var(--blue-color);
+    }
+}
+
+.button-hero__primary {
     height: 51px;
+    background-color: var(--blue-color);
+    padding: 16px 24px;
+
+    p {
+        color: var(--white-color);
+    }
+}
+
+.button-hero__secondary {
+    height: 49.5px;
+    box-shadow: 0 0 0 1.5px var(--blue-color);
+    background-color: var(--white-color);
+    padding: 16px 24px;
+
+    p {
+        color: var(--blue-color);
+    }
+}
+
+.button-hero__alternative {
+    height: 49px;
     background-color: var(--white-color);
     padding: 16px 24px;
 
@@ -131,18 +162,37 @@
         }
     }
 
-    .button-primary {
-        height: 33px;
-        padding: 8px 16px;
+    .button-primary,
+    .button-alternative {
+        height: 40px;
+        padding: 10.5px 16px;
+        gap: 10px;
+
+        p {
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
 
     .button-secondary {
-        height: 31.5px;
+        height: 38.5px;
+        padding: 10.5px 16px;
+        gap: 10px;
+
+        p {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    .button-hero__primary,
+    .button-hero__alternative {
+        height: 33px;
         padding: 8px 16px;
     }
 
-    .button-alternative {
-        height: 33px;
+    .button-hero__secondary {
+        height: 31.5px;
         padding: 8px 16px;
     }
 }
