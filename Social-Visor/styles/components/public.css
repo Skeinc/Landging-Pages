@@ -1,0 +1,226 @@
+/* Public */
+.public {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.public-ellipse-1 {
+    width: 913px;
+    height: 913px;
+    position: absolute;
+    left: 1324px;
+    top: -148.12px;
+    background: rgba(0, 166, 255, 0.15);
+    filter: blur(130px);
+    z-index: 2;
+}
+
+.public-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0px;
+    gap: 48px;
+    background-color: rgba(255, 255, 255, 0.01);
+    z-index: 3;
+}
+
+.public-header {
+    width: 100%;
+    height: auto;
+    padding: 0px 23%;
+    gap: 8px;
+
+    p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        background: var(--grey-color2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+    }
+}
+
+.public-row {
+    width: max-content;
+    height: auto;
+    position: relative;
+    white-space: nowrap;
+    align-items: stretch !important;
+    gap: 32px;
+    will-change: transform;
+}
+
+.public-person {
+    width: 320px;
+    height: auto;
+    align-items: flex-start;
+    padding: 0px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    gap: 0px;
+    overflow: hidden;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.public-person__image {
+    width: 100%;
+    height: 233px;
+    object-fit: cover;
+}
+
+.public-person__container {
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    gap: 8px;
+}
+
+.public-person__post {
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-wrap: wrap;
+    background: linear-gradient(85.63deg, #1C007F 0%, #A70096 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.3s ease;
+}
+
+.public-person__description {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-wrap: wrap;
+    transition: all 0.3s ease;
+}
+
+.public-controller {
+    width: 100%;
+    height: auto;
+    padding: 0px 23%;
+}
+
+@media (max-width: 1920px) {
+    .public-header {
+        padding: 0px 10%;
+    }
+
+    .public-controller {
+        padding: 0px 10%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .public-header {
+        padding: 0px 64px;
+    }
+
+    .public-controller {
+        padding: 0px 64px;
+    }
+
+    .public-person {
+        width: 290px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .public-header {
+        padding: 0px 32px;
+    }
+
+    .public-controller {
+        padding: 0px 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .public-container {
+        gap: 32px;
+    }
+
+    .public-header {
+        padding: 0px 24px;
+
+        h2 {
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+
+    .public-row {
+        gap: 8px;
+    }
+
+    .public-person {
+        width: 240px;
+    }
+
+    .public-person__container {
+        padding: 16px;
+    }
+
+    .public-person__post {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .public-person__description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .public-controller {
+        padding: 0px 24px;
+    }
+}
+
+@media (max-width: 375px) {
+    .public-container {
+        gap: 24px;
+    }
+
+    .public-header {
+        padding: 0px 16px;
+        gap: 4px;
+
+        p {
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        h2 {
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+
+    .public-controller {
+        padding: 0px 16px;
+
+        button {
+            width: 100%;
+        }
+    }
+}

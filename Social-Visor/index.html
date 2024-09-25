@@ -22,15 +22,15 @@
                     </div>
 
                     <div class="controllers flex-row flex-align-center">
-                        <button id="login-icon" type="button" class="button-icon flex-center-center">
+                        <button id="login-icon" type="button" class="button-icon flex-center-center" onclick="redirectToLogin()">
                             <img src="assets/icons/login-logout-arrow.svg" alt="Login icon">
                         </button>
 
-                        <button id="login-button" type="button" class="button button-header__secondary flex-center-center">
+                        <button id="login-button" type="button" class="button button-header__secondary flex-center-center" onclick="redirectToLogin()">
                             <p>Войти</p>
                         </button>
 
-                        <button type="button" class="button button-header__primary flex-center-center">
+                        <button type="button" class="button button-header__primary flex-center-center" onclick="redirectToRegister()">
                             <p>Регистрация</p>
                         </button>
 
@@ -153,7 +153,7 @@
                         <p class="hero-description__tablet">Освободите своё время для творчества и инноваций. Мы предоставляем вам доступ к мощным инструментам, которые помогут реализовать ваши идеи и проекты.</p>
 
                         <div class="hero-controllers flex-row">
-                            <button type="button" class="button button-hero__primary flex-center-center">
+                            <button type="button" class="button button-hero__primary flex-center-center" onclick="redirectToRegister()">
                                 <p>Попробуйте бесплатно</p>
                             </button>
 
@@ -502,7 +502,7 @@
     
                                 <p id="information-description-desktop" class="information-description">Отслеживайте использование вашего контента на других сайтах. Будет полезно фотографам, дизайнерам, медийным личностям и прочим правообладателям. Найденные материалы удобно систематизировать и обновлять историю запросов</p>
                             
-                                <button id="information-button-desktop" type="button" class="button button-primary flex-row flex-center-center">
+                                <button id="information-button-desktop" type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
                                     <img src="assets/icons/chart-star-circle-white.svg" alt="SEO icon">
                                     
                                     <p>Начать поиск</p>
@@ -517,7 +517,7 @@
                         <div class="features-service__group flex-column">
                             <p class="information-description">Отслеживайте использование вашего контента на других сайтах. Будет полезно фотографам, дизайнерам, медийным личностям и прочим правообладателям. Найденные материалы удобно систематизировать и обновлять историю запросов</p>
                             
-                            <button type="button" class="button button-primary flex-row flex-center-center">
+                            <button type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
                                 <img src="assets/icons/chart-star-circle-white.svg" alt="SEO icon">
                                 
                                 <p>Начать поиск</p>
@@ -547,7 +547,7 @@
     
                                 <p id="information-description-desktop" class="information-description block-2-description">Анализируйте аудиторию и контент сообщества своей компании, конкурентов и блоггеров. Изучайте данные на понятных графиках, таблицах и диаграммах. Для анализа доступны только открытые аккаунты</p>
                             
-                                <button id="information-button-desktop" type="button" class="button button-primary flex-row flex-center-center">
+                                <button id="information-button-desktop" type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
                                     <img src="assets/icons/chip-microchip-square-signal-white.svg" alt="Analyze icon">
                                     
                                     <p>Начать анализировать</p>
@@ -558,7 +558,7 @@
                         <div class="features-service__group flex-column">
                             <p class="information-description block-2-description">Анализируйте аудиторию и контент сообщества своей компании, конкурентов и блоггеров. Изучайте данные на понятных графиках, таблицах и диаграммах. Для анализа доступны только открытые аккаунты</p>
                             
-                            <button type="button" class="button button-primary flex-row flex-center-center">
+                            <button type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
                                 <img src="assets/icons/chip-microchip-square-signal-white.svg" alt="Analyze icon">
                                 
                                 <p>Начать анализировать</p>
@@ -584,7 +584,7 @@
     
                                 <p id="information-description-desktop" class="information-description">Добавляйте ключевые запросы и отслеживайте изменение позиций в поисковой выдаче. Полезно для коммерческих запросов, отслеживания репутации бренда в поиске, а также для защиты прав правообладателей</p>
                             
-                                <button id="information-button-desktop" type="button" class="button button-primary flex-row flex-center-center">
+                                <button id="information-button-desktop" type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
                                     <img src="assets/icons/message-text-edit-white.svg" alt="Message icon">
                                     
                                     <p>Начать отслеживать</p>
@@ -599,7 +599,7 @@
                         <div class="features-service__group flex-column">
                             <p class="information-description">Добавляйте ключевые запросы и отслеживайте изменение позиций в поисковой выдаче. Полезно для коммерческих запросов, отслеживания репутации бренда в поиске, а также для защиты прав правообладателей</p>
                             
-                            <button type="button" class="button button-primary flex-row flex-center-center">
+                            <button type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
                                 <img src="assets/icons/message-text-edit-white.svg" alt="Message icon">
                                 
                                 <p>Начать отслеживать</p>
@@ -799,15 +799,311 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Sources -->
+            <section class="sources">
+                <div class="sources-ellipse-1"></div>
+
+                <div class="sources-ellipse-2"></div>
+
+                <img class="sources-map" src="assets/images/sources/map.png" alt="Map">
+
+                <div class="sources-container flex-column">
+                    <!-- Source header -->
+                    <header class="sources-header flex-column">
+                        <p>Объединяем людей</p>
+
+                        <h2>Наши источники</h2>
+                    </header>
+
+                    <!-- Source cards -->
+                    <div class="sources-cards flex-row flex-center-center">
+                        <div class="source-card flex-column flex-center-center">
+                            <p class="source-card__type">Социальные медиа</p>
+
+                            <p class="source-card__value">3 млрд</p>
+
+                            <p class="source-card__caption">сообщений в месяц</p>
+
+                            <div class="source-card__description flex-column flex-center-center">
+                                <p>Социальные медиа: ВКонтакте, Instagram, Одноклассники, Facebook, Rutube, Youtube, TikTok и др.</p>
+
+                                <p>Блоги, форумы, сайты отзывов.</p>
+
+                                <p>Telegram-каналы и открытые чаты</p>
+                            </div>
+                        </div>
+
+                        <div class="source-card flex-column flex-center-center">
+                            <p class="source-card__type">Поисковая выдача</p>
+
+                            <p class="source-card__value">60 000</p>
+
+                            <p class="source-card__caption">источников</p>
+
+                            <div class="source-card__description flex-column flex-center-center">
+                                <p>Запросы поисковой выдачи с учётом всех возможных регионов и спецификаций.</p>
+                            </div>
+                        </div>
+
+                        <div class="source-card flex-column flex-center-center">
+                            <p class="source-card__type">Архив</p>
+
+                            <p class="source-card__value">220 млрд</p>
+
+                            <p class="source-card__caption">фотографий</p>
+
+                            <div class="source-card__description flex-column flex-center-center">
+                                <p>фотографий из соцмедиа</p>
+                            </div>
+                        </div>
+
+                        <div class="source-card flex-column flex-center-center">
+                            <p class="source-card__type">География</p>
+
+                            <p class="source-card__value">12 стран</p>
+
+                            <div class="source-card__description flex-column flex-center-center">
+                                <p>SocialVisor оптимизирована для сбора и анализа соцмедиа и СМИ по России, Азербайджану, Армении, Беларуси, Грузии, Казахстану, Кыргызстану, Молдове, Таджикистану, Туркменистану, Узбекистану.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Public -->
+            <section class="public">
+                <div class="public-ellipse-1"></div>
+
+                <div class="public-container flex-column">
+                    <!-- Public header -->
+                    <header class="public-header flex-column">
+                        <p>Для кого этот сервис</p>
+
+                        <h2>Нам по пути, если ты</h2>
+                    </header>
+
+                    <!-- Public persons -->
+                    <div class="public-row flex-row flex-align-center">
+                        <div class="public-person flex-column">
+                            <img class="public-person__image" src="assets/images/public/person-1.jpeg" alt="Person post image">
+
+                            <div class="public-person__container flex-column">
+                                <p class="public-person__post">PR-специалист</p>
+
+                                <p class="public-person__description">В целом, конечно, социально-экономическое развитие напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            </div>
+                        </div>
+
+                        <div class="public-person flex-column">
+                            <img class="public-person__image" src="assets/images/public/person-2.png" alt="Person post image">
+
+                            <div class="public-person__container flex-column">
+                                <p class="public-person__post">Блогер</p>
+
+                                <p class="public-person__description">В целом, конечно, социально-экономическое развитие напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            </div>
+                        </div>
+
+                        <div class="public-person flex-column">
+                            <img class="public-person__image" src="assets/images/public/person-3.png" alt="Person post image">
+
+                            <div class="public-person__container flex-column">
+                                <p class="public-person__post">SMM-специалист</p>
+
+                                <p class="public-person__description">В целом, конечно, социально-экономическое развитие напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            </div>
+                        </div>
+
+                        <div class="public-person flex-column">
+                            <img class="public-person__image" src="assets/images/public/person-4.png" alt="Person post image">
+
+                            <div class="public-person__container flex-column">
+                                <p class="public-person__post">Прогрессивная компания</p>
+
+                                <p class="public-person__description">В целом, конечно, социально-экономическое развитие напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            </div>
+                        </div>
+
+                        <div class="public-person flex-column">
+                            <img class="public-person__image" src="assets/images/public/person-5.png" alt="Person post image">
+
+                            <div class="public-person__container flex-column">
+                                <p class="public-person__post">Интернет журналист</p>
+
+                                <p class="public-person__description">В целом, конечно, социально-экономическое развитие напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            </div>
+                        </div>
+
+                        <div class="public-person flex-column">
+                            <img class="public-person__image" src="assets/images/public/person-6.png" alt="Person post image">
+
+                            <div class="public-person__container flex-column">
+                                <p class="public-person__post">Продавец маркетплейса</p>
+
+                                <p class="public-person__description">В целом, конечно, социально-экономическое развитие напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            </div>
+                        </div>
+
+                        <div class="public-person flex-column">
+                            <img class="public-person__image" src="assets/images/public/person-7.png" alt="Person post image">
+
+                            <div class="public-person__container flex-column">
+                                <p class="public-person__post">SMM-специалист</p>
+
+                                <p class="public-person__description">В целом, конечно, социально-экономическое развитие напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            </div>
+                        </div>
+
+                        <div class="public-person flex-column">
+                            <img class="public-person__image" src="assets/images/public/person-8.png" alt="Person post image">
+
+                            <div class="public-person__container flex-column">
+                                <p class="public-person__post">Маркетолог</p>
+
+                                <p class="public-person__description">В целом, конечно, социально-экономическое развитие напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Public controller -->
+                    <div class="public-controller flex-center-center">
+                        <button id="public-button" type="button" class="button button-public__primary" onclick="redirectToRegister()">
+                            <p>Получить доступ</p>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Support -->
+            <section class="support">
+                <div class="support-ellipse-1"></div>
+
+                <div class="support-ellipse-2"></div>
+
+                <div class="support-container flex-row flex-align-center">
+                    <div class="support-container__information flex-column">
+                        <!-- Support header -->
+                        <header class="support-header flex-column">
+                            <p>Служба заботы</p>
+
+                            <h2>Мы здесь, чтобы помочь</h2>
+                        </header>
+
+                        <!-- Support Description -->
+                        <p class="support-description">В целом, конечно, социально-экономическое развитие напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач.</p>
+                    
+                        <!-- Support Controllers -->
+                        <div class="support-controllers flex-row">
+                            <button type="button" class="button button-primary flex-center-center">
+                                <img src="assets/icons/Telegram.svg" alt="Telegram icon">
+
+                                <p>Написать в поддержку</p>
+                            </button>
+
+                            <button type="button" class="button button-alternative flex-center-center">
+                                <p>посмотреть FAQ</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <img class="support-image" src="assets/images/support/support.png" alt="Support image">
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
-        <footer></footer>
+        <footer class="footer">
+            <div class="footer-container flex-row">
+                <div class="footer-brand flex-column">
+                    <img class="footer-brand__logotype" src="assets/icons/logotype.svg" alt="Logotype">
+
+                    <div class="footer-brand__socialmedias flex-column">
+                        <p>Социальные сети</p>
+
+                        <div class="footer-socialmedias__items flex-row flex-align-center">
+                            <img src="assets/icons/footer/Vk.svg" alt="VK icon">
+
+                            <img src="assets/icons/footer/Zen.svg" alt="Zen icon">
+
+                            <img src="assets/icons/footer/Vc.svg" alt="VC icon">
+                            
+                            <img src="assets/icons/footer/R.svg" alt="R icon">
+
+                            <img src="assets/icons/footer/pikabu.svg" alt="Pikabu icon">
+
+                            <img src="assets/icons/footer/Ok.svg" alt="OK icon">
+
+                            <img src="assets/icons/footer/Youtube.svg" alt="Youtube icon">
+                        </div>
+                    </div>
+
+                    <div class="footer-brand__legal flex-column">
+                        <p>ИП БОГУШ МИХАИЛ ВИКТОРОВИЧ</p>
+                        <p>ОГРНИП: 320519000009705</p>
+                    </div>
+
+                    <div id="footer-group-laptop" class="footer-group flex-column">
+                        <div class="footer-group__support flex-column">
+                            <p>Поддержка</p>
+    
+                            <a class="footer-support__email" href="mailto:support@socialvisor.ru"><p>support@socialvisor.ru</p></a>
+                        </div>
+    
+                        <button type="button" class="button button-footer__primary flex-center-center">
+                            <img src="assets/icons/Telegram.svg" alt="Telegram icon">
+    
+                            <p>Написать в поддержку</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer-links__container flex-row">
+                    <div class="footer-links flex-column">
+                        <a class="footer-link" href="#"><p>Оферта</p></a>
+    
+                        <a class="footer-link" href="#"><p>Политика обработки данных</p></a>
+    
+                        <a class="footer-link" href="#"><p>Управление аккаунтом</p></a>
+    
+                        <a class="footer-link" href="#"><p>Соглашение на совершение рекуррентных платежей</p></a>
+    
+                        <a class="footer-link" href="#"><p>Соглашение на обработку персональных данных</p></a>
+                    </div>
+    
+                    <div class="footer-links flex-column">
+                        <a class="footer-link" href="#"><p>Какую информацию анализирует сервис</p></a>
+    
+                        <a class="footer-link" href="#"><p>Партнёрская программа</p></a>
+    
+                        <a class="footer-link" href="#"><p>Тарифы</p></a>
+    
+                        <a class="footer-link" href="#"><p>Блог</p></a>
+                    </div>
+                </div>
+
+                <div id="footer-group-desktop" class="footer-group flex-column">
+                    <div class="footer-group__support flex-column">
+                        <p>Поддержка</p>
+
+                        <a class="footer-support__email" href="mailto:support@socialvisor.ru"><p>support@socialvisor.ru</p></a>
+                    </div>
+
+                    <button type="button" class="button button-footer__primary flex-center-center">
+                        <img src="assets/icons/Telegram.svg" alt="Telegram icon">
+
+                        <p>Написать в поддержку</p>
+                    </button>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <!-- Scripts -->
     <script src="scripts/menu.js"></script>
+    <script src="scripts/public.js"></script>
     <script src="scripts/metrics.js"></script>
     <script src="scripts/reviews.js"></script>
+    <script src="scripts/routing.js"></script>
 </body>
 </html>

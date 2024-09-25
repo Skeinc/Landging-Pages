@@ -48,6 +48,10 @@
     background-color: var(--blue-color);
     padding: 16px 24px;
 
+    &:hover {
+        transform: scale(1.05);
+    }
+
     p {
         color: var(--white-color);
     }
@@ -59,6 +63,10 @@
     background-color: var(--white-color);
     padding: 16px 24px;
 
+    &:hover {
+        transform: scale(1.05);
+    }
+
     p {
         color: var(--blue-color);
     }
@@ -68,6 +76,10 @@
     height: 52px;
     background-color: var(--white-color);
     padding: 16px 24px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     p {
         color: var(--blue-color);
@@ -79,29 +91,54 @@
     background-color: var(--blue-color);
     padding: 16px 24px;
 
+    &:hover {
+        transform: scale(1.05);
+    }
+
     p {
         color: var(--white-color);
     }
 }
 
-.button-hero__secondary {
-    height: 49.5px;
-    box-shadow: 0 0 0 1.5px var(--blue-color);
+.button-hero__alternative {
+    height: 51px;
     background-color: var(--white-color);
     padding: 16px 24px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     p {
         color: var(--blue-color);
     }
 }
 
-.button-hero__alternative {
-    height: 49px;
-    background-color: var(--white-color);
+.button-public__primary {
+    height: 51px;
+    background-color: var(--blue-color);
     padding: 16px 24px;
 
+    &:hover {
+        transform: scale(1.05);
+    }
+
     p {
-        color: var(--blue-color);
+        color: var(--white-color);
+    }
+}
+
+.button-footer__primary {
+    height: 51px;
+    background-color: var(--blue-color);
+    padding: 16px 24px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    p {
+        color: var(--white-color);
     }
 }
 
@@ -191,8 +228,13 @@
         padding: 8px 16px;
     }
 
-    .button-hero__secondary {
-        height: 31.5px;
+    .button-public__primary {
+        height: 35px;
+        padding: 8px 16px;
+    }
+
+    .button-footer__primary {
+        height: 34px;
         padding: 8px 16px;
     }
 }

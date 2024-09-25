@@ -1,5 +1,4 @@
 /* Reviews */
-
 .reviews {
     width: 100%;
     height: auto;
@@ -52,7 +51,7 @@
     h2 {
         font-weight: 700;
         font-size: 40px;
-        line-height: 48px;
+        line-height: 47px;
     }
 }
 
@@ -67,7 +66,7 @@
 
 .reviews-row__author {
     width: 424px;
-    height: 219px;
+    height: auto;
     position: relative;
     align-items: flex-end;
     isolation: isolate;
@@ -250,7 +249,7 @@
 
     .reviews-row__author {
         width: 364px;
-        height: 239px;       
+        height: auto;       
     }
 
     .author-name {
@@ -327,7 +326,7 @@
 
     .reviews-row__author {
         width: 234px;
-        height: 223px;
+        height: auto;
         padding: 16px;
     }
     

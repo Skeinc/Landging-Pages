@@ -1,7 +1,11 @@
 @import 'components/features.css';
+@import 'components/support.css';
+@import 'components/sources.css';
 @import 'components/reviews.css';
 @import 'components/metrics.css';
+@import 'components/footer.css';
 @import 'components/header.css';
+@import 'components/public.css';
 @import 'components/button.css';
 @import 'components/hero.css';
 @import 'base/variables.css';
