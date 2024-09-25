@@ -99,11 +99,14 @@
     transition: all 0.3s ease;
 
     &:hover {
-        text-decoration: underline;
+        p {
+            color: var(--grey-color1);
+        }
     }
 
     p {
         color: var(--dark-color);
+        transition: all 0.3s ease;
     }
 }
 
