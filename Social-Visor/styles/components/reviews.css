@@ -13,6 +13,7 @@
     left: 1136px;
     top: 58.88px;
     background: rgba(255, 0, 191, 0.07);
+    border-radius: 50%;
     filter: blur(130px);
     z-index: 1;
 }

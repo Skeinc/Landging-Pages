@@ -500,7 +500,7 @@
                     </header>
 
                     <!-- Features service 1 -->
-                    <div class="features-service flex-column">
+                    <div data-aos="fade-left" class="features-service flex-column">
                         <div class="features-service__ellipse-1"></div>
 
                         <div class="features-service__ellipse-2"></div>
@@ -541,7 +541,7 @@
                     </div>
 
                     <!-- Features service 2 -->
-                    <div class="features-service flex-column">
+                    <div data-aos="fade-right" class="features-service flex-column">
                         <div class="features-service__ellipse-3"></div>
 
                         <div class="features-service__ellipse-4"></div>
@@ -582,7 +582,7 @@
                     </div>
 
                     <!-- Features service 3 -->
-                    <div class="features-service flex-column">
+                    <div data-aos="fade-left" class="features-service flex-column">
                         <div class="features-service__ellipse-5"></div>
 
                         <div class="features-service__ellipse-6"></div>
@@ -821,7 +821,9 @@
 
                 <div class="sources-ellipse-2"></div>
 
-                <img class="sources-map" src="assets/images/sources/map.png" alt="Map">
+                <div class="map-container">
+                    
+                </div>
 
                 <div class="sources-container flex-column">
                     <!-- Source header -->
@@ -1116,10 +1118,74 @@
 
     <!-- Scripts -->
     <script src="scripts/menu.js"></script>
-    <!-- <script src="scripts/public.js"></script>
+    <!-- <script src="scripts/public.js"></script> -->
     <script src="scripts/metrics.js"></script>
-    <script src="scripts/reviews.js"></script> -->
+    <!-- <script src="scripts/reviews.js"></script> -->
     <script src="scripts/routing.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Инициализация сцены, камеры и рендера
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(65, 980 / 817, 0.1, 1000);
+        // Инициализация рендера с поддержкой прозрачности
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(980, 817);
+        renderer.setClearColor(0x000000, 0); // Устанавливаем прозрачный цвет (alpha = 0)
+        document.querySelector('.map-container').appendChild(renderer.domElement);
+
+        // Создаем геометрию шара
+        const geometry = new THREE.SphereGeometry(5, 32, 32);
+
+        // Загрузка текстуры (ваша карта мира)
+        const textureLoader = new THREE.TextureLoader();
+        const texture = textureLoader.load('assets/images/sources/map.png');
+
+        // Материал для шара с натянутой текстурой карты
+        const material = new THREE.MeshBasicMaterial({ map: texture });
+        const globe = new THREE.Mesh(geometry, material);
+
+        // Добавляем глобус на сцену
+        scene.add(globe);
+
+        // Позиция камеры
+        camera.position.z = 10;
+
+        if(window.innerWidth <= 768) {
+            camera.position.z = 15;
+            document.querySelector('.map-container').style.top = "0px"
+        }
+
+        if(window.innerWidth <= 650) {
+            document.querySelector('.map-container').style.top = "196px"
+        }
+
+        window.addEventListener('resize', () => {
+            if(window.innerWidth <= 768 && window.innerWidth > 650) {
+                camera.position.z = 15;
+                document.querySelector('.map-container').style.top = "0px"
+            }
+            else if(window.innerWidth <= 650) {
+                document.querySelector('.map-container').style.top = "196px"
+            }
+            else {
+                camera.position.z = 10;
+                document.querySelector('.map-container').style.top = "196px"
+            }
+        })
+
+        // Функция анимации вращения
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Вращаем глобус по оси Y для эффекта вращения
+            globe.rotation.y += 0.005;
+
+            renderer.render(scene, camera);
+        }
+
+        // Запускаем анимацию
+        animate();
+    </script>
 </body>
 </html>

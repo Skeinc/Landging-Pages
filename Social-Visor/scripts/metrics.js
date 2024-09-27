@@ -10,20 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let lastTimestamp = 0;
     let scrollAmount = 0;
-    const scrollSpeed = 0.075;
+    const scrollSpeed = 1;
 
     function scrollMetrics(timestamp) {
         if (!lastTimestamp) lastTimestamp = timestamp;
         
         const timeDiff = timestamp - lastTimestamp;
 
-        scrollAmount -= scrollSpeed * timeDiff;
+        scrollAmount -= scrollSpeed * timeDiff / 1000; // скорость в процентах в секунду
 
-        if (Math.abs(scrollAmount) >= metricsRow.scrollWidth / 2) {
+        if (Math.abs(scrollAmount) >= 100) {
             scrollAmount = 0;
         }
 
-        metricsRow.style.transform = `translateX(${scrollAmount}px)`;
+        metricsRow.style.transform = `translateX(${scrollAmount}%)`;
         lastTimestamp = timestamp;
 
         // Продолжаем анимацию
