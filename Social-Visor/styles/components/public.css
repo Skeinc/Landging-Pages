@@ -56,10 +56,17 @@
     width: max-content;
     height: auto;
     position: relative;
+    display: flex;
     white-space: nowrap;
     align-items: stretch !important;
     gap: 32px;
     will-change: transform;
+}
+
+.public-items {
+    flex-shrink: 0;
+    display: flex;
+    gap: 32px;
 }
 
 .public-person {
@@ -76,6 +83,10 @@
     -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
     -moz-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
+}
+
+.public-marquee {
+    animation: scrollPublic 20s linear infinite;
 }
 
 .public-person__image {
@@ -173,6 +184,14 @@
         gap: 8px;
     }
 
+    .public-items {
+        gap: 8px;
+    }
+
+    .public-marquee {
+        animation: scrollPublicMobile 20s linear infinite;
+    }
+
     .public-person {
         width: 240px;
     }
@@ -222,5 +241,25 @@
         button {
             width: 100%;
         }
+    }
+}
+
+@keyframes scrollPublic {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 32px));
+    }
+}
+
+@keyframes scrollPublicMobile {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 8px));
     }
 }
