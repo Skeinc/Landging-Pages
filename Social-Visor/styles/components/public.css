@@ -14,6 +14,8 @@
     top: -148.12px;
     background: rgba(0, 166, 255, 0.15);
     filter: blur(130px);
+    -webkit-filter: blur(130px);
+    will-change: transform;
     z-index: 2;
 }
 
@@ -86,6 +88,7 @@
 }
 
 .public-marquee {
+    will-change: transform;
     animation: scrollPublic 20s linear infinite;
 }
 
@@ -189,6 +192,7 @@
     }
 
     .public-marquee {
+        will-change: transform;
         animation: scrollPublicMobile 20s linear infinite;
     }
 

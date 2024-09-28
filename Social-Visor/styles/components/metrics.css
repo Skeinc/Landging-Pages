@@ -43,6 +43,7 @@
 }
 
 .metrics-marquee {
+    will-change: transform;
     animation: scrollMetrics 20s linear infinite;
 }
 
@@ -134,6 +135,7 @@
     }
 
     .metrics-marquee {
+        will-change: transform;
         animation: scrollMetricsMobile 20s linear infinite;
     }
 
