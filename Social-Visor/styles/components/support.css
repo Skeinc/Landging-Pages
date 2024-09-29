@@ -17,6 +17,7 @@
     -webkit-filter: blur(130px);
     will-change: transform;
     z-index: 1;
+    animation: supportEllipse1Animation 6s ease-in-out infinite;
 }
 
 .support-ellipse-2 {
@@ -30,6 +31,7 @@
     -webkit-filter: blur(130px);
     will-change: transform;
     z-index: 1;
+    animation: supportEllipse2Animation 6s ease-in-out infinite;
 }
 
 .support-container {
@@ -92,13 +94,105 @@
     gap: 24px;
 }
 
-.support-image {
-    width: 616px;
+.support-image__container {
+    width: 100%;
     height: auto;
-    object-fit: cover;
+    transition: all 0.3s ease;
+
+    .support-image {
+        transform: scale(calc(616/365));
+    }
+}
+
+.support-image {
+    width: 365px;
+    height: 215px;
+    position: relative;
+    z-index: 1;
     transition: all 0.3s ease;
 }
 
+#support-image-1 {
+    position: absolute;
+    bottom: 7%;
+    right: 5%;
+    animation: animationSupport1 10s ease-in-out infinite;
+}
+
+#support-image-2 {
+    position: absolute;
+    top: 3%;
+    right: 15%;
+    z-index: 2;
+    animation: animationSupport2 8s ease-in-out infinite;
+}
+
+#support-image-3 {
+    position: absolute;
+    top: 0px;
+    left: 35%;
+    animation: animationSupport1 8s ease-in-out infinite;
+}
+
+#support-image-4 {
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    animation: animationSupport3 6s ease-in-out infinite;
+}
+
+#support-image-5 {
+    position: absolute;
+    bottom: 10%;
+    left: 32%;
+    z-index: 2;
+    animation: animationSupport2 12s ease-in-out infinite;
+}
+
+#support-image-6 {
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    animation: animationSupport1 10s ease-in-out infinite;
+}
+
+#support-image-7 {
+    position: absolute;
+    top: 25%;
+    right: 0px;
+    animation: animationSupport3 12s ease-in-out infinite;
+}
+
+#support-image-8 {
+    position: absolute;
+    top: 15%;
+    left: 27%;
+    z-index: 2;
+    animation: animationSupport3 8s ease-in-out infinite;
+}
+
+#support-image-9 {
+    position: absolute;
+    top: 55%;
+    left: 17%;
+    animation: animationSupport2 16s ease-in-out infinite;
+}
+
+#support-image-10 {
+    position: absolute;
+    bottom: 0px;
+    left: 60%;
+    animation: animationSupport3 14s ease-in-out infinite;
+}
+
+#support-image-11 {
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    z-index: 1;
+    animation: animationSupport1 20s ease-in-out infinite;
+}
+ 
 @media (max-width: 1920px) {
     .support-ellipse-1 {
         left: 595px;
@@ -142,8 +236,12 @@
         padding: 60px 32px;
     }
 
-    .support-image {
+    .support-image__container {
         width: 496px;
+
+        .support-image {
+            transform: scale(calc(496/365));
+        }
     }
 }
 
@@ -184,8 +282,27 @@
         width: 100%;
     }
 
+    .support-image__container {
+        width: 100%;
+
+        .support-image {
+            transform: none;
+        }
+    }
+
     .support-image {
         width: 100%;
+        max-width: 496px;
+        height: auto;
+        min-height: 215px;
+    }
+}
+
+@media (max-width:500px) {
+    .support-controllers {
+        button {
+            width: 100%;
+        }
     }
 }
 
@@ -210,5 +327,80 @@
             font-size: 22px;
             line-height: 26px;
         }
+    }
+}
+
+@keyframes animationSupport1 {
+    0%, 100% {
+        transform: translate(0, 0);
+        scale: 1;
+    }
+    25% {
+        transform: translate(5px, -5px);
+    }
+    50% {
+        transform: translate(-5px, 5px);
+        scale: 1.1;
+    }
+    75% {
+        transform: translate(3px, -3px);
+    }
+}
+
+@keyframes animationSupport2 {
+    0%, 100% {
+        transform: translate(0, 0);
+        scale: 1;
+    }
+    25% {
+        transform: translate(10px, 0px);
+    }
+    50% {
+        transform: translate(0px, -5px);
+        scale: 1.2;
+    }
+    75% {
+        transform: translate(-5px, -3px);
+    }
+}
+
+@keyframes animationSupport3 {
+    0%, 100% {
+        transform: translate(0, 0);
+        scale: 1;
+    }
+    25% {
+        transform: translate(0px, 10px);
+    }
+    50% {
+        transform: translate(-5px, 0px);
+        scale: 1.1;
+    }
+    75% {
+        transform: translate(3px, -5px);
+    }
+}
+
+@keyframes supportEllipse1Animation {
+    0% {
+        background: rgba(98, 0, 255, 0.07);
+    }
+    50% {
+        background: rgba(255, 0, 230, 0.2);
+    }
+    100% {
+        background: rgba(98, 0, 255, 0.07);
+    }
+}
+
+@keyframes supportEllipse2Animation {
+    0% {
+        background: rgba(255, 0, 230, 0.2);
+    }
+    50% {
+        background: rgba(98, 0, 255, 0.07);
+    }
+    100% {
+        background: rgba(255, 0, 230, 0.2);
     }
 }
