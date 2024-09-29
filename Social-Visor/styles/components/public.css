@@ -89,7 +89,7 @@
 
 .public-marquee {
     will-change: transform;
-    animation: scrollPublic 20s linear infinite;
+    animation: scrollPublic 26s linear infinite;
 }
 
 .public-person__image {
@@ -193,7 +193,7 @@
 
     .public-marquee {
         will-change: transform;
-        animation: scrollPublicMobile 20s linear infinite;
+        animation: scrollPublicMobile 26s linear infinite;
     }
 
     .public-person {

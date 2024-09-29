@@ -93,7 +93,7 @@
 
 .reviews-marquee {
     will-change: transform;
-    animation: scrollReviews 20s linear infinite;
+    animation: scrollReviews 26s linear infinite;
 }
 
 .author-image {
@@ -344,7 +344,7 @@
     }
 
     .reviews-marquee {
-        animation: scrollReviewsMobile 20s linear infinite;
+        animation: scrollReviewsMobile 26s linear infinite;
     }
 
     .reviews-row__author {

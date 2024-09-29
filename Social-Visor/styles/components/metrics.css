@@ -44,7 +44,7 @@
 
 .metrics-marquee {
     will-change: transform;
-    animation: scrollMetrics 20s linear infinite;
+    animation: scrollMetrics 26s linear infinite;
 }
 
 .item-value {
@@ -136,7 +136,7 @@
 
     .metrics-marquee {
         will-change: transform;
-        animation: scrollMetricsMobile 20s linear infinite;
+        animation: scrollMetricsMobile 26s linear infinite;
     }
 
     .metrics-row__item {
