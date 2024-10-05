@@ -408,6 +408,7 @@
         left: none;
         width: auto;
         height: 0px;
+        background-color: transparent;
     }
 
     .header-menu__button {
@@ -420,6 +421,7 @@
         height: auto;
         padding: 16px;
         gap: 12px;
+        background-color: transparent;
     }
     
     .products-dropdown__item {
