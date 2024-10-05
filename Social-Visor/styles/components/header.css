@@ -421,10 +421,19 @@
         padding: 16px;
         gap: 12px;
     }
+    
+    .products-dropdown__item {
+        height: auto;
+    }
 
     .products-dropdown__item__image {
         width: 32px;
         height: 32px;
+    }
+
+    .products-dropdown__item__title {
+        font-size: 14px;
+        line-height: 17px;
     }
 
     #language-area-mobile {
