@@ -24,7 +24,125 @@
                         <img class="brand-image" src="assets/icons/logotype.svg" alt="Brand logo">
                     </div>
 
+                    <nav class="header-menu flex-row flex-align-center">
+                        <div id="products-area" class="flex-column">
+                            <button id="products-toggler" class="header-menu__button flex-row flex-align-center" onclick="productsTogglerHandler()">
+                                <p>Продукты</p>
+
+                                <img src="assets/icons/header/arrow-down-blue.svg" alt="Arrow down icon">
+                            </button>
+
+                            <div id="products-dropdown" class="products-dropdown">
+                                <ul class="products-dropdown__items flex-column">
+                                    <li class="products-dropdown__item flex-row flex-align-center">
+                                        <img class="products-dropdown__item__image" src="assets/images/features/features-1.svg" alt="Product image">
+
+                                        <div class="products-dropdown__item__information flex-column">
+                                            <p class="products-dropdown__item__title">Аналитика социальных медиа и мессенджеров</p>
+
+                                            <p class="products-dropdown__item__description">Анализируй, составляй отчёты и будь на шаг впереди своих конкурентов.</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="products-dropdown__item flex-row flex-align-center">
+                                        <img class="products-dropdown__item__image" src="assets/images/features/features-2.svg" alt="Product image">
+
+                                        <div class="products-dropdown__item__information flex-column">
+                                            <p class="products-dropdown__item__title">Инструменты на базе AI - технологий</p>
+
+                                            <p class="products-dropdown__item__description">Отслеживайте свою производительность и создавайте отчеты с полезной информацией</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="products-dropdown__item flex-row flex-align-center">
+                                        <img class="products-dropdown__item__image" src="assets/images/features/features-3.svg" alt="Product image">
+
+                                        <div class="products-dropdown__item__information flex-column">
+                                            <p class="products-dropdown__item__title">Мониторинг и повышение репутации</p>
+
+                                            <p class="products-dropdown__item__description">Оперативное получение информации и последующая работа с ней - залог высокой репутации вашей компании</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="products-dropdown__item flex-row flex-align-center">
+                                        <img class="products-dropdown__item__image" src="assets/images/features/features-4.svg" alt="Product image">
+
+                                        <div class="products-dropdown__item__information flex-column">
+                                            <p class="products-dropdown__item__title">Генерация идей и креативных решений</p>
+
+                                            <p class="products-dropdown__item__description">Идеи на любой вкус —от смелых до классических.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="products-dropdown__questions flex-column">
+                                    <li class="products-dropdown__question flex-row flex-align-center">
+                                        <p class="products-dropdown__question__label">Как настроить поиск по социальным сетям?</p>
+
+                                        <button class="button-icon" onclick="redirectToProducts()">
+                                            <img src="assets/icons/header/arrow-circle-blue.svg" alt="Arrow circle blue icon">
+                                        </button>
+                                    </li>
+
+                                    <li class="products-dropdown__question flex-row flex-align-center">
+                                        <p class="products-dropdown__question__label">Как выбрать нужный тариф?</p>
+
+                                        <button class="button-icon" onclick="redirectToProducts()">
+                                            <img src="assets/icons/header/arrow-circle-blue.svg" alt="Arrow circle blue icon">
+                                        </button>
+                                    </li>
+
+                                    <li class="products-dropdown__question flex-row flex-align-center">
+                                        <p class="products-dropdown__question__label">Что необходимо знать о работе искусственного интеллекта?</p>
+
+                                        <button class="button-icon" onclick="redirectToProducts()">
+                                            <img src="assets/icons/header/arrow-circle-blue.svg" alt="Arrow circle blue icon">
+                                        </button>
+                                    </li>
+
+                                    <li class="products-dropdown__question flex-row flex-align-center">
+                                        <p class="products-dropdown__question__label">Как работает умный поиск по ключевым словам?</p>
+
+                                        <button class="button-icon" onclick="redirectToProducts()">
+                                            <img src="assets/icons/header/arrow-circle-blue.svg" alt="Arrow circle blue icon">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button class="header-menu__button flex-row flex-align-center" onclick="redirectToTariffs()">
+                            <p>Тарифы</p>
+                        </button>
+
+                        <button class="header-menu__button flex-row flex-align-center" onclick="redirectToCompany()">
+                            <p>Компания</p>
+                        </button>
+
+                        <button class="header-menu__button flex-row flex-align-center" onclick="redirectToBlog()">
+                            <p>Блог</p>
+                        </button>
+
+                        <button class="header-menu__button flex-row flex-align-center" onclick="redirectToFAQ()">
+                            <p>FAQ</p>
+                        </button>
+                    </nav>
+
                     <div class="controllers flex-row flex-align-center">
+                        <div id="language-area" class="language-area flex-column">
+                            <button id="language" type="button" class="button-language flex-center-center" onclick="languageTogglerHandler()">
+                                <span>🇷🇺</span>
+    
+                                <p class="button-language__value">Россия</p>
+    
+                                <img class="button-language__icon" src="assets/icons/header/arrow-down-blue.svg" alt="Button icon">
+                            </button>
+
+                            <div id="language-dropdown" class="language-dropdown">
+                                
+                            </div>
+                        </div>
+
                         <button id="login-icon" type="button" class="button-icon flex-center-center" onclick="redirectToLogin()">
                             <img src="assets/icons/login-logout-arrow.svg" alt="Login icon">
                         </button>
@@ -37,11 +155,93 @@
                             <p>Регистрация</p>
                         </button>
 
+                        <div class="account flex-row flex-align-center">
+                            <p class="account-username">userName</p>
+
+                            <img class="account-image" src="" alt="Account image">
+                        </div>
+
                         <button id="menu" type="button" class="button-icon flex-column flex-center-center" onclick="menuTogglerHandler()">
                             <span id="menu-line-1" class="menu-line"></span>
                             <span id="menu-line-2" class="menu-line"></span>
                             <span id="menu-line-3" class="menu-line"></span>
                         </button>
+                    </div>
+                </div>
+
+                <div class="menu-overlay flex-column flex-center-center">
+                    <div id="products-area" class="flex-column">
+                        <button id="products-toggler-mobile" class="header-menu__button flex-row flex-align-center" onclick="productsTogglerMobileHandler()">
+                            <p>Продукты</p>
+
+                            <img src="assets/icons/header/arrow-down-blue.svg" alt="Arrow down icon">
+                        </button>
+
+                        <div id="products-dropdown-mobile" class="products-dropdown">
+                            <ul class="products-dropdown__items flex-column">
+                                <li class="products-dropdown__item flex-row flex-align-center">
+                                    <img class="products-dropdown__item__image" src="assets/images/features/features-1.svg" alt="Product image">
+
+                                    <div class="products-dropdown__item__information flex-column">
+                                        <p class="products-dropdown__item__title">Аналитика социальных медиа и мессенджеров</p>
+                                    </div>
+                                </li>
+
+                                <li class="products-dropdown__item flex-row flex-align-center">
+                                    <img class="products-dropdown__item__image" src="assets/images/features/features-2.svg" alt="Product image">
+
+                                    <div class="products-dropdown__item__information flex-column">
+                                        <p class="products-dropdown__item__title">Инструменты на базе AI - технологий</p>
+                                    </div>
+                                </li>
+
+                                <li class="products-dropdown__item flex-row flex-align-center">
+                                    <img class="products-dropdown__item__image" src="assets/images/features/features-3.svg" alt="Product image">
+
+                                    <div class="products-dropdown__item__information flex-column">
+                                        <p class="products-dropdown__item__title">Мониторинг и повышение репутации</p>
+                                    </div>
+                                </li>
+
+                                <li class="products-dropdown__item flex-row flex-align-center">
+                                    <img class="products-dropdown__item__image" src="assets/images/features/features-4.svg" alt="Product image">
+
+                                    <div class="products-dropdown__item__information flex-column">
+                                        <p class="products-dropdown__item__title">Генерация идей и креативных решений</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="header-menu__button flex-row flex-align-center" onclick="redirectToTariffs()">
+                        <p>Тарифы</p>
+                    </button>
+
+                    <button class="header-menu__button flex-row flex-align-center" onclick="redirectToCompany()">
+                        <p>Компания</p>
+                    </button>
+
+                    <button class="header-menu__button flex-row flex-align-center" onclick="redirectToBlog()">
+                        <p>Блог</p>
+                    </button>
+
+                    <button class="header-menu__button flex-row flex-align-center" onclick="redirectToFAQ()">
+                        <p>FAQ</p>
+                    </button>
+
+                    <div id="language-area-mobile" class="language-area flex-column">
+                        <button id="language-mobile" type="button" class="button-language flex-center-center" onclick="languageTogglerMobileHandler()">
+                            <span>🇷🇺</span>
+
+                            <p class="button-language__value">Россия</p>
+
+                            <img class="button-language__icon" src="assets/icons/header/arrow-down-blue.svg" alt="Button icon">
+                        </button>
+
+                        <div id="language-dropdown-mobile" class="language-dropdown">
+                            
+                        </div>
                     </div>
                 </div>
             </div>

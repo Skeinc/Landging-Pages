@@ -10,3 +10,23 @@ function redirectToLogin() {
 function redirectToRegister() {
     window.location.href = ROUTES.register
 }
+
+function redirectToProducts() {
+    window.location.href = '';
+}
+
+function redirectToTariffs() {
+    window.location.href = '';
+}
+
+function redirectToCompany() {
+    window.location.href = '';
+}
+
+function redirectToBlog() {
+    window.location.href = '';
+}
+
+function redirectToFAQ() {
+    window.location.href = '';
+}

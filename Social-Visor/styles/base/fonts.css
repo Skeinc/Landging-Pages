@@ -2,22 +2,30 @@
     font-display: swap;
     font-style: normal;
     font-weight: 400;
-    font-family: 'TT Norms';
-    src: url('../../assets/fonts/TTNorms-Regular.woff2') format('woff2'), url('../../assets/fonts/TTNorms-Regular.woff') format('woff');
+    font-family: 'Gilroy';
+    src: url('../../assets/fonts/gilroy-regular.woff2') format('woff2'), url('../../assets/fonts/gilroy-regular.woff') format('woff');
 }
 
 @font-face {
     font-display: swap;
     font-style: normal;
     font-weight: 500;
-    font-family: 'TT Norms';
-    src: url('../../assets/fonts/TTNorms-Medium.woff2') format('woff2'), url('../../assets/fonts/TTNorms-Medium.woff') format('woff');
+    font-family: 'Gilroy';
+    src: url('../../assets/fonts/gilroy-medium.woff2') format('woff2'), url('../../assets/fonts/gilroy-medium.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Gilroy';
+    src: url('../../assets/fonts/gilroy-semibold.woff2') format('woff2'), url('../../assets/fonts/gilroy-semibold.woff') format('woff');
 }
 
 @font-face {
     font-display: swap;
     font-style: normal;
     font-weight: 700;
-    font-family: 'TT Norms';
-    src: url('../../assets/fonts/TTNorms-Bold.woff2') format('woff2'), url('../../assets/fonts/TTNorms-Bold.woff') format('woff');
+    font-family: 'Gilroy';
+    src: url('../../assets/fonts/gilroy-bold.woff2') format('woff2'), url('../../assets/fonts/gilroy-bold.woff') format('woff');
 }
