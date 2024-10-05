@@ -93,6 +93,18 @@
     }
 }
 
+#products-toggler-mobile {
+    img {
+        transition: all 0.3s ease;
+    }
+
+    &.products-open {
+        img {
+            transform: rotate(180deg);
+        }
+    }
+}
+
 .products-dropdown {
     position: absolute;
     top: 32px;
