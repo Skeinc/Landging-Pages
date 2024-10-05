@@ -41,6 +41,12 @@
 .brand {
     width: auto;
     height: auto;
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .brand-image {

@@ -1,6 +1,8 @@
 const ROUTES = {
     login: 'https://app.socialvisor.ru/login',
-    register: 'https://app.socialvisor.ru/register'
+    register: 'https://app.socialvisor.ru/register',
+    overview: '/index.html',
+    products: '/pages/products.html'
 }
 
 function redirectToLogin() {
@@ -8,11 +10,15 @@ function redirectToLogin() {
 }
 
 function redirectToRegister() {
-    window.location.href = ROUTES.register
+    window.location.href = ROUTES.register;
+}
+
+function redirectToOverview() {
+    window.location.href = ROUTES.overview;
 }
 
 function redirectToProducts() {
-    window.location.href = '';
+    window.location.href = ROUTES.products;
 }
 
 function redirectToTariffs() {
