@@ -2,6 +2,8 @@
 const productsItemsButtons = document.querySelectorAll('.products-grid__item');
 // Активный индекс продукта
 let activeProductIndex = 0;
+// Блоки продуктов
+const productsBlocks = document.querySelectorAll('.products-block');
 
 // Выбор активного продукта
 function selectActiveProduct(index) {
@@ -15,4 +17,11 @@ function selectActiveProduct(index) {
     // Выбираем активный продукт
     productsItemsButtons[index].classList.toggle('products-grid__item__active');
     activeProductIndex = index;
+
+    // Отображаем соответствующий блок
+    for(let i = 0; i < productsBlocks.length; i++) {
+        productsBlocks[i].style.display = 'none';
+    }
+
+    productsBlocks[activeProductIndex].style.display = 'flex';
 }
