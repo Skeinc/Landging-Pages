@@ -2,7 +2,8 @@ const ROUTES = {
     login: 'https://app.socialvisor.ru/login',
     register: 'https://app.socialvisor.ru/register',
     overview: '/index.html',
-    products: '/pages/products.html'
+    products: '/pages/products.html',
+    tariffs: '/pages/tariffs.html'
 }
 
 function redirectToLogin() {
@@ -22,7 +23,7 @@ function redirectToProducts() {
 }
 
 function redirectToTariffs() {
-    window.location.href = '';
+    window.location.href = ROUTES.tariffs;
 }
 
 function redirectToCompany() {

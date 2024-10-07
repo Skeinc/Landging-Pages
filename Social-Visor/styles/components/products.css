@@ -17,6 +17,7 @@
     left: 31px;
     top: 220px;
     background: #FFFFFF;
+    border-radius: 50%;
     filter: blur(130px);
     -webkit-filter: blur(130px);
     -moz-filter: blur(130px);
@@ -31,6 +32,7 @@
     left: 441px;
     top: -26px;
     background: rgba(149, 0, 255, 0.07);
+    border-radius: 50%;
     filter: blur(130px);
     -webkit-filter: blur(130px);
     -moz-filter: blur(130px);
@@ -471,14 +473,14 @@
     flex-wrap: wrap;
     align-items: start;
     justify-content: center;
-    gap: 32px;
+    gap: 16px;
     transition: all 0.3s ease;
 }
 
 .products-block__benefits__item {
     width: 273px;
     height: auto;
-    gap: 16px;
+    gap: 32px;
     text-align: center;
 
     .products-benefits__image {
@@ -507,7 +509,7 @@
 
 @media (max-width: 1440px) {
     .products-hero__container {
-        padding: 80px 64px;
+        padding: 64px 64px;
     }
 
     .products-container {
@@ -516,6 +518,11 @@
 
     .products-block {
         padding: 64px;
+    }
+
+    .products-block__benefits__item {
+        width: auto;
+        min-width: 256px;
     }
 }
 
@@ -534,7 +541,7 @@
 
 @media (max-width: 1024px) {
     .products-hero__container {
-        padding: 80px 32px;
+        padding: 32px 32px;
     }
 
     .products-container {
@@ -594,6 +601,8 @@
     }
 
     .products-block__benefits__item {
+        min-width: 192px;
+
         .products-benefits__image {
             width: 64px;
             height: 64px;
@@ -608,7 +617,7 @@
 
 @media (max-width: 768px) {
     .products-hero__container {
-        padding: 48px 24px;
+        padding: 24px 24px;
     }
 
     .products-hero__title {
@@ -642,16 +651,16 @@
     }
 
     .products-block__benefits__item {
-        width: 200px;
+        min-width: 140px;
 
         .products-benefits__image {
-            width: 64px;
-            height: 64px;
+            width: 72px;
+            height: 72px;
         }
     
         .products-benefits__label {
-            font-size: 16px;
-            line-height: 18px;
+            font-size: 14px;
+            line-height: 16px;
         }
     }
 }
@@ -680,6 +689,30 @@
 
     .products-block__container {
         gap: 24px;
+    }
+
+    .products-block__title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .products-item__label {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .products-block__benefits {
+        gap: 16px;
+    }
+    
+    .products-block__benefits__item {
+        width: 130px;
+        min-width: none;
+
+        .products-benefits__label {
+            font-size: 12px;
+            line-height: 14px;
+        }
     }
 }
 
