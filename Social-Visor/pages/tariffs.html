@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Visor</title>
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <!-- SEO -->
-    <meta name="description" content="Social Visor — система для аналитики и поиска данных. Аналитика сообществ и профилей ВКонтакте, отслеживание и анализ поисковой выдачи, мониторинг использования контента для правообладателей, отслеживание упоминаний." />
-    <meta name="keywords" content="Social Visor, аналитика ВКонтакте, аналитика соцсетей, анализ поисковой выдачи, отслеживание контента, защита авторских прав, мониторинг упоминаний, анализ профилей ВК, SEO анализ, позиции сайта" />
+    <meta name="description"
+        content="Social Visor — система для аналитики и поиска данных. Аналитика сообществ и профилей ВКонтакте, отслеживание и анализ поисковой выдачи, мониторинг использования контента для правообладателей, отслеживание упоминаний." />
+    <meta name="keywords"
+        content="Social Visor, аналитика ВКонтакте, аналитика соцсетей, анализ поисковой выдачи, отслеживание контента, защита авторских прав, мониторинг упоминаний, анализ профилей ВК, SEO анализ, позиции сайта" />
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/global.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- JS -->
     <script src="../scripts/onload.js"></script>
 </head>
+
 <body>
     <div class="page-wrapper">
         <!-- Header -->
@@ -26,7 +30,8 @@
 
                     <nav class="header-menu flex-row flex-align-center">
                         <div id="products-area" class="flex-column">
-                            <button id="products-toggler" class="header-menu__button flex-row flex-align-center" onclick="productsTogglerHandler()">
+                            <button id="products-toggler" class="header-menu__button flex-row flex-align-center"
+                                onclick="productsTogglerHandler()">
                                 <p>Продукты</p>
 
                                 <img src="../assets/icons/header/arrow-down-blue.svg" alt="Arrow down icon">
@@ -34,53 +39,72 @@
 
                             <div id="products-dropdown" class="products-dropdown">
                                 <ul class="products-dropdown__items flex-column">
-                                    <li class="products-dropdown__item flex-row flex-align-center" onclick="redirectToProducts()">
-                                        <img class="products-dropdown__item__image" src="../assets/images/features/features-1.svg" alt="Product image">
+                                    <li class="products-dropdown__item flex-row flex-align-center"
+                                        onclick="redirectToProducts()">
+                                        <img class="products-dropdown__item__image"
+                                            src="../assets/images/features/features-1.svg" alt="Product image">
 
                                         <div class="products-dropdown__item__information flex-column">
-                                            <p class="products-dropdown__item__title">Аналитика социальных медиа и мессенджеров</p>
+                                            <p class="products-dropdown__item__title">Аналитика социальных медиа и
+                                                мессенджеров</p>
 
-                                            <p class="products-dropdown__item__description">Анализируй, составляй отчёты и будь на шаг впереди своих конкурентов.</p>
+                                            <p class="products-dropdown__item__description">Анализируй, составляй отчёты
+                                                и будь на шаг впереди своих конкурентов.</p>
                                         </div>
                                     </li>
 
-                                    <li class="products-dropdown__item flex-row flex-align-center" onclick="redirectToProducts()">
-                                        <img class="products-dropdown__item__image" src="../assets/images/features/features-2.svg" alt="Product image">
+                                    <li class="products-dropdown__item flex-row flex-align-center"
+                                        onclick="redirectToProducts()">
+                                        <img class="products-dropdown__item__image"
+                                            src="../assets/images/features/features-2.svg" alt="Product image">
 
                                         <div class="products-dropdown__item__information flex-column">
-                                            <p class="products-dropdown__item__title">Инструменты на базе AI - технологий</p>
+                                            <p class="products-dropdown__item__title">Инструменты на базе AI -
+                                                технологий</p>
 
-                                            <p class="products-dropdown__item__description">Отслеживайте свою производительность и создавайте отчеты с полезной информацией</p>
+                                            <p class="products-dropdown__item__description">Отслеживайте свою
+                                                производительность и создавайте отчеты с полезной информацией</p>
                                         </div>
                                     </li>
 
-                                    <li class="products-dropdown__item flex-row flex-align-center" onclick="redirectToProducts()">
-                                        <img class="products-dropdown__item__image" src="../assets/images/features/features-3.svg" alt="Product image">
+                                    <li class="products-dropdown__item flex-row flex-align-center"
+                                        onclick="redirectToProducts()">
+                                        <img class="products-dropdown__item__image"
+                                            src="../assets/images/features/features-3.svg" alt="Product image">
 
                                         <div class="products-dropdown__item__information flex-column">
-                                            <p class="products-dropdown__item__title">Мониторинг и повышение репутации</p>
+                                            <p class="products-dropdown__item__title">Мониторинг и повышение репутации
+                                            </p>
 
-                                            <p class="products-dropdown__item__description">Оперативное получение информации и последующая работа с ней - залог высокой репутации вашей компании</p>
+                                            <p class="products-dropdown__item__description">Оперативное получение
+                                                информации и последующая работа с ней - залог высокой репутации вашей
+                                                компании</p>
                                         </div>
                                     </li>
 
-                                    <li class="products-dropdown__item flex-row flex-align-center" onclick="redirectToProducts()">
-                                        <img class="products-dropdown__item__image" src="../assets/images/features/features-4.svg" alt="Product image">
+                                    <li class="products-dropdown__item flex-row flex-align-center"
+                                        onclick="redirectToProducts()">
+                                        <img class="products-dropdown__item__image"
+                                            src="../assets/images/features/features-4.svg" alt="Product image">
 
                                         <div class="products-dropdown__item__information flex-column">
-                                            <p class="products-dropdown__item__title">Генерация идей и креативных решений</p>
+                                            <p class="products-dropdown__item__title">Генерация идей и креативных
+                                                решений</p>
 
-                                            <p class="products-dropdown__item__description">Идеи на любой вкус —от смелых до классических.</p>
+                                            <p class="products-dropdown__item__description">Идеи на любой вкус —от
+                                                смелых до классических.</p>
                                         </div>
                                     </li>
                                 </ul>
 
                                 <ul class="products-dropdown__questions flex-column">
                                     <li class="products-dropdown__question flex-row flex-align-center">
-                                        <p class="products-dropdown__question__label">Как настроить поиск по социальным сетям?</p>
+                                        <p class="products-dropdown__question__label">Как настроить поиск по социальным
+                                            сетям?</p>
 
                                         <button class="button-icon" onclick="redirectToProducts()">
-                                            <img src="../assets/icons/header/arrow-circle-blue.svg" alt="Arrow circle blue icon">
+                                            <img src="../assets/icons/header/arrow-circle-blue.svg"
+                                                alt="Arrow circle blue icon">
                                         </button>
                                     </li>
 
@@ -88,23 +112,28 @@
                                         <p class="products-dropdown__question__label">Как выбрать нужный тариф?</p>
 
                                         <button class="button-icon" onclick="redirectToProducts()">
-                                            <img src="../assets/icons/header/arrow-circle-blue.svg" alt="Arrow circle blue icon">
+                                            <img src="../assets/icons/header/arrow-circle-blue.svg"
+                                                alt="Arrow circle blue icon">
                                         </button>
                                     </li>
 
                                     <li class="products-dropdown__question flex-row flex-align-center">
-                                        <p class="products-dropdown__question__label">Что необходимо знать о работе искусственного интеллекта?</p>
+                                        <p class="products-dropdown__question__label">Что необходимо знать о работе
+                                            искусственного интеллекта?</p>
 
                                         <button class="button-icon" onclick="redirectToProducts()">
-                                            <img src="../assets/icons/header/arrow-circle-blue.svg" alt="Arrow circle blue icon">
+                                            <img src="../assets/icons/header/arrow-circle-blue.svg"
+                                                alt="Arrow circle blue icon">
                                         </button>
                                     </li>
 
                                     <li class="products-dropdown__question flex-row flex-align-center">
-                                        <p class="products-dropdown__question__label">Как работает умный поиск по ключевым словам?</p>
+                                        <p class="products-dropdown__question__label">Как работает умный поиск по
+                                            ключевым словам?</p>
 
                                         <button class="button-icon" onclick="redirectToProducts()">
-                                            <img src="../assets/icons/header/arrow-circle-blue.svg" alt="Arrow circle blue icon">
+                                            <img src="../assets/icons/header/arrow-circle-blue.svg"
+                                                alt="Arrow circle blue icon">
                                         </button>
                                     </li>
                                 </ul>
@@ -130,28 +159,33 @@
 
                     <div class="controllers flex-row flex-align-center">
                         <div id="language-area" class="language-area flex-column">
-                            <button id="language" type="button" class="button-language flex-center-center" onclick="languageTogglerHandler()">
+                            <button id="language" type="button" class="button-language flex-center-center"
+                                onclick="languageTogglerHandler()">
                                 <span>🇷🇺</span>
-    
+
                                 <p class="button-language__value">Россия</p>
-    
-                                <img class="button-language__icon" src="../assets/icons/header/arrow-down-blue.svg" alt="Button icon">
+
+                                <img class="button-language__icon" src="../assets/icons/header/arrow-down-blue.svg"
+                                    alt="Button icon">
                             </button>
 
                             <div id="language-dropdown" class="language-dropdown">
-                                
+
                             </div>
                         </div>
 
-                        <button id="login-icon" type="button" class="button-icon flex-center-center" onclick="redirectToLogin()">
+                        <button id="login-icon" type="button" class="button-icon flex-center-center"
+                            onclick="redirectToLogin()">
                             <img src="../assets/icons/login-logout-arrow.svg" alt="Login icon">
                         </button>
 
-                        <button id="login-button" type="button" class="button button-header__secondary flex-center-center" onclick="redirectToLogin()">
+                        <button id="login-button" type="button"
+                            class="button button-header__secondary flex-center-center" onclick="redirectToLogin()">
                             <p>Войти</p>
                         </button>
 
-                        <button type="button" class="button button-header__primary flex-center-center" onclick="redirectToRegister()">
+                        <button type="button" class="button button-header__primary flex-center-center"
+                            onclick="redirectToRegister()">
                             <p>Регистрация</p>
                         </button>
 
@@ -161,7 +195,8 @@
                             <img class="account-image" src="" alt="Account image">
                         </div>
 
-                        <button id="menu" type="button" class="button-icon flex-column flex-center-center" onclick="menuTogglerHandler()">
+                        <button id="menu" type="button" class="button-icon flex-column flex-center-center"
+                            onclick="menuTogglerHandler()">
                             <span id="menu-line-1" class="menu-line"></span>
                             <span id="menu-line-2" class="menu-line"></span>
                             <span id="menu-line-3" class="menu-line"></span>
@@ -171,7 +206,8 @@
 
                 <div class="menu-overlay flex-column flex-center-center">
                     <div id="products-area" class="flex-column">
-                        <button id="products-toggler-mobile" class="header-menu__button flex-row flex-align-center" onclick="productsTogglerMobileHandler()">
+                        <button id="products-toggler-mobile" class="header-menu__button flex-row flex-align-center"
+                            onclick="productsTogglerMobileHandler()">
                             <p>Продукты</p>
 
                             <img src="../assets/icons/header/arrow-down-blue.svg" alt="Arrow down icon">
@@ -179,35 +215,46 @@
 
                         <div id="products-dropdown-mobile" class="products-dropdown">
                             <ul class="products-dropdown__items flex-column">
-                                <li class="products-dropdown__item flex-row flex-align-center" onclick="redirectToProducts()">
-                                    <img class="products-dropdown__item__image" src="../assets/images/features/features-1.svg" alt="Product image">
+                                <li class="products-dropdown__item flex-row flex-align-center"
+                                    onclick="redirectToProducts()">
+                                    <img class="products-dropdown__item__image"
+                                        src="../assets/images/features/features-1.svg" alt="Product image">
 
                                     <div class="products-dropdown__item__information flex-column">
-                                        <p class="products-dropdown__item__title">Аналитика социальных медиа и мессенджеров</p>
+                                        <p class="products-dropdown__item__title">Аналитика социальных медиа и
+                                            мессенджеров</p>
                                     </div>
                                 </li>
 
-                                <li class="products-dropdown__item flex-row flex-align-center" onclick="redirectToProducts()">
-                                    <img class="products-dropdown__item__image" src="../assets/images/features/features-2.svg" alt="Product image">
+                                <li class="products-dropdown__item flex-row flex-align-center"
+                                    onclick="redirectToProducts()">
+                                    <img class="products-dropdown__item__image"
+                                        src="../assets/images/features/features-2.svg" alt="Product image">
 
                                     <div class="products-dropdown__item__information flex-column">
-                                        <p class="products-dropdown__item__title">Инструменты на базе AI - технологий</p>
+                                        <p class="products-dropdown__item__title">Инструменты на базе AI - технологий
+                                        </p>
                                     </div>
                                 </li>
 
-                                <li class="products-dropdown__item flex-row flex-align-center" onclick="redirectToProducts()">
-                                    <img class="products-dropdown__item__image" src="../assets/images/features/features-3.svg" alt="Product image">
+                                <li class="products-dropdown__item flex-row flex-align-center"
+                                    onclick="redirectToProducts()">
+                                    <img class="products-dropdown__item__image"
+                                        src="../assets/images/features/features-3.svg" alt="Product image">
 
                                     <div class="products-dropdown__item__information flex-column">
                                         <p class="products-dropdown__item__title">Мониторинг и повышение репутации</p>
                                     </div>
                                 </li>
 
-                                <li class="products-dropdown__item flex-row flex-align-center" onclick="redirectToProducts()">
-                                    <img class="products-dropdown__item__image" src="../assets/images/features/features-4.svg" alt="Product image">
+                                <li class="products-dropdown__item flex-row flex-align-center"
+                                    onclick="redirectToProducts()">
+                                    <img class="products-dropdown__item__image"
+                                        src="../assets/images/features/features-4.svg" alt="Product image">
 
                                     <div class="products-dropdown__item__information flex-column">
-                                        <p class="products-dropdown__item__title">Генерация идей и креативных решений</p>
+                                        <p class="products-dropdown__item__title">Генерация идей и креативных решений
+                                        </p>
                                     </div>
                                 </li>
                             </ul>
@@ -231,16 +278,18 @@
                     </button>
 
                     <div id="language-area-mobile" class="language-area flex-column">
-                        <button id="language-mobile" type="button" class="button-language flex-center-center" onclick="languageTogglerMobileHandler()">
+                        <button id="language-mobile" type="button" class="button-language flex-center-center"
+                            onclick="languageTogglerMobileHandler()">
                             <span>🇷🇺</span>
 
                             <p class="button-language__value">Россия</p>
 
-                            <img class="button-language__icon" src="../assets/icons/header/arrow-down-blue.svg" alt="Button icon">
+                            <img class="button-language__icon" src="../assets/icons/header/arrow-down-blue.svg"
+                                alt="Button icon">
                         </button>
 
                         <div id="language-dropdown-mobile" class="language-dropdown">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -257,21 +306,26 @@
                 <div class="tariffs-hero__container flex-column">
                     <h1 class="tariffs-hero__title">Тарифы</h1>
 
-                    <p class="tariffs-hero__description">Оформите подписку и получите скидку 30% по сравнению с разовым платежом, что позволит вам сэкономить и получить доступ к преимуществам длительного сотрудничества.</p>
-                
+                    <p class="tariffs-hero__description">Оформите подписку и получите скидку 30% по сравнению с разовым
+                        платежом, что позволит вам сэкономить и получить доступ к преимуществам длительного
+                        сотрудничества.</p>
+
                     <div class="tariffs-hero__payment flex-row">
                         <div class="payment-selector flex-column">
-                            <p class="payment-selector__label">Срок подписки: <span class="text-blue">3 месяца</span> / <span class="text-gradient">скидка: 30%</span></p>
+                            <p class="payment-selector__label">Срок подписки: <span class="text-blue">3 месяца</span> /
+                                <span class="text-gradient">скидка: 30%</span></p>
                         </div>
-                    
+
                         <div class="payment-controllers flex-row flex-align-center">
-                            <button type="button" class="button payment-button flex-column flex-center-center" onclick="toggleActivePaymentButton(0)">
+                            <button type="button" class="button payment-button flex-column flex-center-center"
+                                onclick="toggleActivePaymentButton(0)">
                                 <p class="payment-button__label">Подписка</p>
 
                                 <p class="payment-button__caption">со скидкой 30%</p>
                             </button>
 
-                            <button type="button" class="button payment-button flex-column flex-center-center" onclick="toggleActivePaymentButton(1)">
+                            <button type="button" class="button payment-button flex-column flex-center-center"
+                                onclick="toggleActivePaymentButton(1)">
                                 <p class="payment-button__label">Разовый платёж</p>
                             </button>
                         </div>
@@ -281,7 +335,240 @@
 
             <!-- Tariffs -->
             <section class="tariffs">
-                <div class="tariffs-container"></div>
+                <div class="tariffs-container">
+                    <div class="tariffs-container__tariffs flex-row">
+                        <!-- Tariff 1 -->
+                        <div class="tariff-card flex-column">
+                            <header class="tariff-card__header flex-row flex-align-center">
+                                <img class="header-image" src="../assets/images/tariffs/tariff-icon-1.svg" alt="Tariff icon">
+                            
+                                <div class="header-container flex-column">
+                                    <p id="tariff-card__title-1" class="header-title text-gradient">Тариф Первый</p>
+
+                                    <div class="header-price flex-row flex-align-center">
+                                        <p class="header-price__value">599₽</p>
+
+                                        <div class="header-price__container flex-column">
+                                            <p class="header-price__caption">/в месяц</p>
+
+                                            <p class="header-price__subscription">-30% по подписке</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </header>
+
+                            <ul class="tariff-card__features flex-column">
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/test-list-search.svg" alt="Tariff Feature icon">
+
+                                    <p>Уникальная методология анализа данных</p>
+                                </li>
+                                
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/clock.svg" alt="Tariff Feature icon">
+
+                                    <p>Высокая скорость обработки данных</p>
+                                </li>
+
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/servers-databases.svg" alt="Tariff Feature icon">
+
+                                    <p>Широкий спектр анализируемых данных</p>
+                                </li>
+
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/clear.svg" alt="Tariff Feature icon">
+
+                                    <p class="features-item__inactive">Простота использования</p>
+                                </li>
+
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/clear.svg" alt="Tariff Feature icon">
+
+                                    <p class="features-item__inactive">Доступная цена и индивидуальный подход к каждому клиенту</p>
+                                </li>
+                            </ul>
+
+                            <button id="tariff-card__button-1" type="button" class="button button-primary">
+                                <p>Попробовать на 5 дней за 1 ₽</p>
+                            </button>
+                        </div>
+
+                        <!-- Tariff 2 -->
+                        <div class="tariff-card flex-column">
+                            <header class="tariff-card__header flex-row flex-align-center">
+                                <img class="header-image" src="../assets/images/tariffs/tariff-icon-2.svg" alt="Tariff icon">
+                            
+                                <div class="header-container flex-column">
+                                    <p id="tariff-card__title-2" class="header-title text-gradient">Тариф Второй</p>
+
+                                    <div class="header-price flex-row flex-align-center">
+                                        <p class="header-price__value">1 599₽</p>
+
+                                        <div class="header-price__container flex-column">
+                                            <p class="header-price__caption">/в месяц</p>
+
+                                            <p class="header-price__subscription">-30% по подписке</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </header>
+
+                            <ul class="tariff-card__features flex-column">
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/test-list-search.svg" alt="Tariff Feature icon">
+
+                                    <p>Уникальная методология анализа данных</p>
+                                </li>
+                                
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/clock.svg" alt="Tariff Feature icon">
+
+                                    <p>Высокая скорость обработки данных</p>
+                                </li>
+
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/servers-databases.svg" alt="Tariff Feature icon">
+
+                                    <p>Широкий спектр анализируемых данных</p>
+                                </li>
+
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/Smileys.svg" alt="Tariff Feature icon">
+
+                                    <p>Простота использования</p>
+                                </li>
+
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/clear.svg" alt="Tariff Feature icon">
+
+                                    <p class="features-item__inactive">Доступная цена и индивидуальный подход к каждому клиенту</p>
+                                </li>
+                            </ul>
+
+                            <button id="tariff-card__button-2" type="button" class="button button-primary">
+                                <p>Попробовать на 5 дней за 1 ₽</p>
+                            </button>
+                        </div>
+
+                        <!-- Tariff 3 -->
+                        <div class="tariff-card flex-column">
+                            <header class="tariff-card__header flex-row flex-align-center">
+                                <img class="header-image" src="../assets/images/tariffs/tariff-icon-3.svg" alt="Tariff icon">
+                            
+                                <div class="header-container flex-column">
+                                    <p id="tariff-card__title-3" class="header-title text-gradient">Тариф Третий</p>
+
+                                    <div class="header-price flex-row flex-align-center">
+                                        <p class="header-price__value">4 599₽</p>
+
+                                        <div class="header-price__container flex-column">
+                                            <p class="header-price__caption">/в месяц</p>
+
+                                            <p class="header-price__subscription">-30% по подписке</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </header>
+
+                            <ul class="tariff-card__features flex-column">
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/test-list-search.svg" alt="Tariff Feature icon">
+
+                                    <p>Уникальная методология анализа данных</p>
+                                </li>
+                                
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/clock.svg" alt="Tariff Feature icon">
+
+                                    <p>Высокая скорость обработки данных</p>
+                                </li>
+
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/servers-databases.svg" alt="Tariff Feature icon">
+
+                                    <p>Широкий спектр анализируемых данных</p>
+                                </li>
+
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/Smileys.svg" alt="Tariff Feature icon">
+
+                                    <p>Простота использования</p>
+                                </li>
+
+                                <li class="features-item flex-row flex-align-center">
+                                    <img src="../assets/icons/tariffs/wallet-money.svg" alt="Tariff Feature icon">
+
+                                    <p>Доступная цена и индивидуальный подход к каждому клиенту</p>
+                                </li>
+                            </ul>
+
+                            <button id="tariff-card__button-3" type="button" class="button button-primary">
+                                <p>Попробовать на 5 дней за 1 ₽</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tariffs-container__support flex-column">
+                        <div class="support-ellipse-1"></div>
+
+                        <header class="support-header flex-column">
+                            <p class="support-header__caption">Служба заботы</p>
+
+                            <h2 class="support-header__title">Клиентская поддержка на всех тарифах</h2>
+                        </header>
+
+                        <div class="support-container flex-row flex-align-center">
+                            <ul class="support-list flex-row flex-center-center">
+                                <li id="support-list-1" class="support-list__item flex-column flex-center-center">
+                                    <img src="../assets/images/support/support-list-image-1.svg" alt="Support list image">
+
+                                    <p>Настройка первых двух тем мониторинга</p>
+                                </li>
+
+                                <li id="support-list-2" class="support-list__item flex-column flex-center-center">
+                                    <img src="../assets/images/support/support-list-image-2.svg" alt="Support list image">
+
+                                    <p>Обучение и консультации по решению ваших задач</p>
+                                </li>
+
+                                <li id="support-list-3" class="support-list__item flex-column flex-center-center">
+                                    <img src="../assets/images/support/support-list-image-3.svg" alt="Support list image">
+
+                                    <p>Техническая поддержка 24/7</p>
+                                </li>
+
+                                <li id="support-list-4" class="support-list__item flex-column flex-center-center">
+                                    <img src="../assets/images/support/support-list-image-4.svg" alt="Support list image">
+
+                                    <p>Подключение до 10 новых источников в месяц по запросу</p>
+                                </li>
+                            </ul>
+
+                            <div class="support-image__container flex-center-center">
+                                <div class="support-image">
+                                    <img id="support-image-1" src="../assets/images/support/support-1.svg" alt="Support part">
+                                    <img id="support-image-2" src="../assets/images/support/support-2.svg" alt="Support part">
+                                    <img id="support-image-3" src="../assets/images/support/support-3.svg" alt="Support part">
+                                    <img id="support-image-4" src="../assets/images/support/support-4.svg" alt="Support part">
+                                    <img id="support-image-5" src="../assets/images/support/support-5.svg" alt="Support part">
+                                    <img id="support-image-6" src="../assets/images/support/support-6.svg" alt="Support part">
+                                    <img id="support-image-7" src="../assets/images/support/support-7.svg" alt="Support part">
+                                    <img id="support-image-8" src="../assets/images/support/support-8.svg" alt="Support part">
+                                    <img id="support-image-9" src="../assets/images/support/support-9.svg" alt="Support part">
+                                    <img id="support-image-10" src="../assets/images/support/support-10.svg" alt="Support part">
+                                    <img id="support-image-11" src="../assets/images/support/support-11.svg" alt="Support part">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tariffs-container__help flex-column">
+                        <header class="help-header flex-column">
+                            <h2 class="help-header__title">Помощь в подборе тарифа</h2>
+                        </header>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -300,7 +587,7 @@
                             <img src="../assets/icons/footer/Zen.svg" alt="Zen icon">
 
                             <img src="../assets/icons/footer/Vc.svg" alt="VC icon">
-                            
+
                             <img src="../assets/icons/footer/R.svg" alt="R icon">
 
                             <img src="../assets/icons/footer/pikabu.svg" alt="Pikabu icon">
@@ -319,13 +606,15 @@
                     <div id="footer-group-laptop" class="footer-group flex-column">
                         <div class="footer-group__support flex-column">
                             <p>Поддержка</p>
-    
-                            <a class="footer-support__email" href="mailto:support@socialvisor.ru"><p>support@socialvisor.ru</p></a>
+
+                            <a class="footer-support__email" href="mailto:support@socialvisor.ru">
+                                <p>support@socialvisor.ru</p>
+                            </a>
                         </div>
-    
+
                         <button type="button" class="button button-footer__primary flex-center-center">
                             <img src="../assets/icons/Telegram.svg" alt="Telegram icon">
-    
+
                             <p>Написать в поддержку</p>
                         </button>
                     </div>
@@ -333,25 +622,43 @@
 
                 <div class="footer-links__container flex-row">
                     <div class="footer-links flex-column">
-                        <a class="footer-link" href="#"><p>Оферта</p></a>
-    
-                        <a class="footer-link" href="#"><p>Политика обработки данных</p></a>
-    
-                        <a class="footer-link" href="#"><p>Управление аккаунтом</p></a>
-    
-                        <a class="footer-link" href="#"><p>Соглашение на совершение рекуррентных платежей</p></a>
-    
-                        <a class="footer-link" href="#"><p>Соглашение на обработку персональных данных</p></a>
+                        <a class="footer-link" href="#">
+                            <p>Оферта</p>
+                        </a>
+
+                        <a class="footer-link" href="#">
+                            <p>Политика обработки данных</p>
+                        </a>
+
+                        <a class="footer-link" href="#">
+                            <p>Управление аккаунтом</p>
+                        </a>
+
+                        <a class="footer-link" href="#">
+                            <p>Соглашение на совершение рекуррентных платежей</p>
+                        </a>
+
+                        <a class="footer-link" href="#">
+                            <p>Соглашение на обработку персональных данных</p>
+                        </a>
                     </div>
-    
+
                     <div class="footer-links flex-column">
-                        <a class="footer-link" href="#"><p>Какую информацию анализирует сервис</p></a>
-    
-                        <a class="footer-link" href="#"><p>Партнёрская программа</p></a>
-    
-                        <a class="footer-link" href="#"><p>Тарифы</p></a>
-    
-                        <a class="footer-link" href="#"><p>Блог</p></a>
+                        <a class="footer-link" href="#">
+                            <p>Какую информацию анализирует сервис</p>
+                        </a>
+
+                        <a class="footer-link" href="#">
+                            <p>Партнёрская программа</p>
+                        </a>
+
+                        <a class="footer-link" href="#">
+                            <p>Тарифы</p>
+                        </a>
+
+                        <a class="footer-link" href="#">
+                            <p>Блог</p>
+                        </a>
                     </div>
                 </div>
 
@@ -359,7 +666,9 @@
                     <div class="footer-group__support flex-column">
                         <p>Поддержка</p>
 
-                        <a class="footer-support__email" href="mailto:support@socialvisor.ru"><p>support@socialvisor.ru</p></a>
+                        <a class="footer-support__email" href="mailto:support@socialvisor.ru">
+                            <p>support@socialvisor.ru</p>
+                        </a>
                     </div>
 
                     <button type="button" class="button button-footer__primary flex-center-center">
@@ -378,4 +687,5 @@
     <script src="../scripts/routing.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
+
 </html>
