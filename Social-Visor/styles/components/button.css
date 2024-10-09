@@ -19,6 +19,7 @@
         font-size: 16px;
         line-height: 19px;
         font-family: 'Gilroy', sans-serif;
+        text-wrap: nowrap;
     }
 }
 
