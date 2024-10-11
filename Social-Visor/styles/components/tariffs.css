@@ -91,6 +91,106 @@
                     color: transparent;
                 }
             }
+
+            .payment-selector__slider {
+                width: 100%;
+                height: auto;
+                gap: 5px;
+
+                .slider-marks {
+                    width: 100%;
+                    height: auto;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+
+                    .slider-mark {
+                        width: 20px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 23px;
+                        text-align: center;
+                        user-select: none;
+                    }
+                }
+
+                .slider-input {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 3;
+
+                    .slider-input__range {
+                        width: 100%;
+                        -webkit-appearance: none;
+                        appearance: none;
+                        position: relative;
+                        height: 8px;
+                        border-radius: 30px;
+                        background: linear-gradient(to right, 
+                            #1C007F 0%, 
+                            #A70096 25.11%, 
+                            #FF005E 50.02%, 
+                            #FF7800 75.18%, 
+                            #FFBB00 100%) var(--white-color);
+                        background-size: var(--value, 0%) 100%;
+                        background-repeat: no-repeat;
+                        outline: none;
+                    }
+                    
+                    .slider-input__range::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        appearance: none;
+                        width: 24px;
+                        height: 34px;
+                        background: url('../../assets/images/tariffs/thumb.svg') no-repeat center;
+                        background-size: cover;
+                        cursor: pointer;
+                    }
+                    
+                    .slider-input__range::-moz-range-thumb {
+                        width: 24px;
+                        height: 34px;
+                        background: url('../../assets/images/tariffs/thumb.svg') no-repeat center;
+                        background-size: cover;
+                        cursor: pointer;
+                    }
+                }
+
+                .ellipse {
+                    position: absolute;
+                    top: 6px;
+                    width: 10px;
+                    height: 10px;
+                    background: #D9D9D9;
+                    border-radius: 50%;
+                    z-index: 3;
+                    user-select: none;
+                }
+
+                .ellipse-1 { left: 0px; }
+
+                .ellipse-2 { left: calc((100% - 10px) / 11); }
+
+                .ellipse-3 { left: calc((100% - 10px) / 11 * 2); }
+
+                .ellipse-4 { left: calc((100% - 10px) / 11 * 3); }
+
+                .ellipse-5 { left: calc((100% - 10px) / 11 * 4); }
+
+                .ellipse-6 { left: calc((100% - 10px) / 11 * 5); }
+
+                .ellipse-7 { left: calc((100% - 10px) / 11 * 6); }
+
+                .ellipse-8 { left: calc((100% - 10px) / 11 * 7); }
+
+                .ellipse-9 { left: calc((100% - 10px) / 11 * 8); }
+
+                .ellipse-10 { left: calc((100% - 10px) / 11 * 9); }
+
+                .ellipse-11 { left: calc((100% - 10px) / 11 * 10); }
+
+                .ellipse-12 { left: calc(100% - 10px); }
+            }
         }
     
         .payment-controllers {

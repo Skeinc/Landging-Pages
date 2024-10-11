@@ -5,13 +5,17 @@ const captionsForSale = document.querySelectorAll('.header-price__subscription')
 // Индекс активной кнопки
 let activePaymentButton = 0;
 
+// Слайдер
+const slider = document.getElementById('tariff-slider');
+const ellipses = document.querySelectorAll('.ellipse');
+
 // Устанавливаем по умолчанию активной первую кнопку
 tariffsPaymentButtons[activePaymentButton].classList.add('payment-button__active');
 
 // Метод для смены активной кнопки
 function toggleActivePaymentButton(buttonIndex) {
     // Очищаем все классы у кнопок, чтобы избавиться от активной кнопки
-    for(let index = 0; index < tariffsPaymentButtons.length; index++) {
+    for (let index = 0; index < tariffsPaymentButtons.length; index++) {
         tariffsPaymentButtons[index].classList.remove('payment-button__active');
     }
 
@@ -19,7 +23,7 @@ function toggleActivePaymentButton(buttonIndex) {
     activePaymentButton = buttonIndex;
     tariffsPaymentButtons[activePaymentButton].classList.add('payment-button__active');
 
-    if(activePaymentButton !== 0) {
+    if (activePaymentButton !== 0) {
         captionsForSale.forEach((caption) => {
             caption.style.display = 'none';
         })
@@ -30,3 +34,31 @@ function toggleActivePaymentButton(buttonIndex) {
         })
     }
 }
+
+// Function to update ellipse visibility
+function updateEllipses() {
+    const value = slider.value;
+    ellipses.forEach((ellipse, index) => {
+      if (index < value) {
+        ellipse.style.display = 'none';
+      } else {
+        ellipse.style.display = 'block';
+      }
+    });
+  }
+  
+  // Call the function on page load and on slider input
+  document.addEventListener('DOMContentLoaded', updateEllipses);
+  slider.addEventListener('input', updateEllipses);
+
+// Устанавливаем начальные значения при загрузке страницы
+document.addEventListener('DOMContentLoaded', function() {
+    const value = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+    slider.style.setProperty('--value', value + '%');
+});
+
+// Обновляем фон ползунка при изменении значения
+slider.addEventListener('input', function() {
+    const value = (this.value - this.min) / (this.max - this.min) * 100;
+    this.style.setProperty('--value', value + '%');
+});
