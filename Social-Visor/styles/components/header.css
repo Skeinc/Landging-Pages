@@ -488,6 +488,10 @@
     #login-icon {
         display: flex;
     }
+
+    .header-container__row {
+        padding: 0px 0px;
+    }
 }
 
 @media (max-width: 375px) {

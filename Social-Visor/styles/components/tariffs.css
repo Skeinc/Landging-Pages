@@ -522,6 +522,7 @@
             grid-template-rows: repeat(2, 1fr);
             grid-column-gap: 96px;
             grid-row-gap: 46px;
+            align-items: start;
             z-index: 4;
             transition: all 0.3s ease;
 
@@ -721,7 +722,7 @@
             justify-content: space-between;
         
             .payment-selector {
-                width: auto;
+                width: 100%;
             }
         }
     }
@@ -869,7 +870,7 @@
     }
 
     .tariffs-container__tariffs {
-        padding: 32px 32px;
+        padding: 32px 24px;
 
         .tariff-card {
             max-width: 351px;
@@ -905,7 +906,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                align-items: center;
+                align-items: start;
                 gap: 16px;
     
                 .support-list__item {
