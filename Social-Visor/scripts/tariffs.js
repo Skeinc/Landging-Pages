@@ -35,7 +35,7 @@ function toggleActivePaymentButton(buttonIndex) {
     }
 }
 
-// Function to update ellipse visibility
+// Функция для обновления элипсов
 function updateEllipses() {
     const value = slider.value;
     ellipses.forEach((ellipse, index) => {
@@ -47,9 +47,9 @@ function updateEllipses() {
     });
   }
   
-  // Call the function on page load and on slider input
-  document.addEventListener('DOMContentLoaded', updateEllipses);
-  slider.addEventListener('input', updateEllipses);
+// Вызываем функцию при инициализации страницы и при использовании слайдера
+document.addEventListener('DOMContentLoaded', updateEllipses);
+slider.addEventListener('input', updateEllipses);
 
 // Устанавливаем начальные значения при загрузке страницы
 document.addEventListener('DOMContentLoaded', function() {
