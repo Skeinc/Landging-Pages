@@ -4,7 +4,7 @@ const ROUTES = {
     overview: '/index.html',
     products: '/pages/products.html',
     tariffs: '/pages/tariffs.html',
-    company: 'pages/company.html'
+    company: '/pages/company.html'
 }
 
 function redirectToLogin() {

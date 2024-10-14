@@ -404,7 +404,6 @@
     position: relative;
     align-items: start;
     gap: 24px;
-    overflow: hidden;
     z-index: 1;
     transition: all 0.3s ease;
 }

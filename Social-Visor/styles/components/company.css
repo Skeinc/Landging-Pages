@@ -1,1 +1,284 @@
 /* Company */
+.company-hero {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #FFFFFF 0%, #EFF8FF 100%);
+    -webkit-background: linear-gradient(180deg, #FFFFFF 0%, #EFF8FF 100%);
+    -moz-background: linear-gradient(180deg, #FFFFFF 0%, #EFF8FF 100%);
+    position: relative;
+    font-family: Gilroy;
+    color: var(--dark-color);
+}
+
+.company-hero__ellipse-1 {
+    position: absolute;
+    width: 635px;
+    height: 635px;
+    left: 458px;
+    top: -344px;
+    background: rgba(0, 170, 255, 0.12);
+    filter: blur(130px);
+    border-radius: 50%;
+    -webkit-filter: blur(130px);
+    -moz-filter: blur(130px);
+    will-change: transform;
+    z-index: 1;
+}
+
+.company-hero__container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 80px 23% 30px 23%;
+    align-items: center;
+    gap: 16px;
+    z-index: 3;
+
+    img {
+        width: 374px;
+        height: auto;
+    }
+
+    p {
+        width: 659px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+    }
+}
+
+.company-overview {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.01);
+    position: relative;
+    font-family: Gilroy;
+    color: var(--dark-color);
+}
+
+.company-company__ellipse-1 {
+    position: absolute;
+    width: 630px;
+    height: 630px;
+    left: 1136px;
+    top: 58.88px;
+    background: rgba(255, 0, 191, 0.07);
+    filter: blur(130px);
+    border-radius: 50%;
+    -webkit-filter: blur(130px);
+    -moz-filter: blur(130px);
+    will-change: transform;
+    z-index: 1;
+}
+
+.company-overview__container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0px 23% 80px 23%;
+    align-items: center;
+    gap: 16px;
+    z-index: 3;
+
+    .company-metrics {
+        width: auto;
+        height: auto;
+        gap: 96px;
+        padding-bottom: 16px;
+
+        .company-metric {
+            width: auto;
+            height: auto;
+            gap: 0px;
+            align-items: center;
+
+            .company-metric__label {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 58px;
+                background: linear-gradient(85.63deg, #1C007F 0%, #A70096 100%);
+                -webkit-background: linear-gradient(85.63deg, #1C007F 0%, #A70096 100%);
+                -moz-background: linear-gradient(85.63deg, #1C007F 0%, #A70096 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+
+            .company-metric__caption {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+            }
+        }
+    }
+
+    .company-product__controllers {
+        width: auto;
+        height: auto;
+        gap: 35px;
+
+        .company-product__controller {
+            width: auto;
+            height: auto;
+            transition: all 0.3s ease;
+
+            .company-product__button {
+                width: auto;
+                height: auto;
+                appearance: none;
+                outline: none;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .company-product {
+        width: 100%;
+        height: auto;
+        background-color: rgba(250, 250, 250, 1);
+        border-radius: 16px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .company-product__information {
+        width: 100%;
+        height: auto;
+        padding: 96px;
+        gap: 80px;
+    }
+
+    #company-product-1 {
+        display: flex;
+    
+        .company-product__ellipse-1 {
+            position: absolute;
+            width: 428px;
+            height: 386px;
+            left: 350px;
+            top: -149px;
+            background: rgba(0, 149, 255, 0.16);
+            filter: blur(130px);
+            border-radius: 50%;
+            filter: blur(130px);
+            -webkit-filter: blur(130px);
+            -moz-filter: blur(130px);
+            will-change: transform;
+            z-index: 1;
+        }
+    
+        .company-product__ellipse-2 {
+            position: absolute;
+            width: 842px;
+            height: 630px;
+            left: 596.82px;
+            top: 204px;
+            background: rgba(0, 238, 255, 0.16);
+            filter: blur(130px);
+            border-radius: 50%;
+            filter: blur(130px);
+            -webkit-filter: blur(130px);
+            -moz-filter: blur(130px);
+            will-change: transform;
+            z-index: 1;
+        }
+    
+        .company-product__ellipse-3 {
+            position: absolute;
+            width: 563px;
+            height: 508px;
+            left: -144px;
+            top: 211px;
+            background: rgba(68, 0, 255, 0.09);
+            border-radius: 50%;
+            filter: blur(130px);
+            -webkit-filter: blur(130px);
+            -moz-filter: blur(130px);
+            will-change: transform;
+            z-index: 1;
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .company-hero__container {
+        padding: 80px 10% 30px 10%;
+    }
+
+    .company-overview__container {
+        padding: 0px 10% 80px 10%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .company-hero__container {
+        padding: 80px 64px 30px 64px;
+    }
+
+    .company-overview__container {
+        padding: 0px 64px 80px 64px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .company-hero__container {
+        padding: 80px 32px 30px 32px;
+    }
+
+    .company-overview__container {
+        padding: 0px 32px 40px 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .company-hero__container {
+        padding: 30px 24px 16px 24px;
+
+        img {
+           width: 254px;
+           height: auto; 
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .company-overview__container {
+        padding: 0px 24px 30px 24px;
+    }
+}
+
+@media (max-width: 375px) {
+    .company-hero__container {
+        padding: 24px 16px 8px 16px;
+
+        img {
+            width: 193px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    .company-overview__container {
+        padding: 0px 16px 30px 16px;
+    }
+}
