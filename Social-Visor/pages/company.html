@@ -249,6 +249,7 @@
 
         <!-- Main -->
         <main>
+            <!-- Hero -->
             <section class="company-hero">
                 <div class="company-hero__ellipse-1"></div>
 
@@ -259,6 +260,7 @@
                 </div>
             </section>
 
+            <!-- Overview -->
             <section class="company-overview">
                 <div class="company-overview__ellipse-1"></div>
 
@@ -290,28 +292,36 @@
                     </ul>
 
                     <ul class="company-product__controllers flex-row">
-                        <li class="company-product__controller">
-                            <button type="button" class="company-product__button">
+                        <li id="company-product__controller-1" class="company-product__controller flex-column">
+                            <button type="button" class="company-product__button" onclick="toggleActiveCompanyProduct(0)">
                                 <img src="../assets/images/features/features-1.svg" alt="Product 1 controller">
                             </button>
+
+                            <div class="company-product__rectangle"></div>
                         </li>
 
-                        <li class="company-product__controller">
-                            <button type="button" class="company-product__button">
+                        <li id="company-product__controller-2" class="company-product__controller flex-column">
+                            <button type="button" class="company-product__button" onclick="toggleActiveCompanyProduct(1)">
                                 <img src="../assets/images/features/features-2.svg" alt="Product 2 controller">
                             </button>
+
+                            <div class="company-product__rectangle"></div>
                         </li>
 
-                        <li class="company-product__controller">
-                            <button type="button" class="company-product__button">
+                        <li id="company-product__controller-3" class="company-product__controller flex-column">
+                            <button type="button" class="company-product__button" onclick="toggleActiveCompanyProduct(2)">
                                 <img src="../assets/images/features/features-3.svg" alt="Product 3 controller">
                             </button>
+
+                            <div class="company-product__rectangle"></div>
                         </li>
 
-                        <li class="company-product__controller">
-                            <button type="button" class="company-product__button">
+                        <li id="company-product__controller-4" class="company-product__controller flex-column">
+                            <button type="button" class="company-product__button" onclick="toggleActiveCompanyProduct(3)">
                                 <img src="../assets/images/features/features-4.svg" alt="Product 4 controller">
                             </button>
+
+                            <div class="company-product__rectangle"></div>
                         </li>
                     </ul>
 
@@ -344,9 +354,194 @@
                                     <img src="../assets/images/features/features-service-1.png" alt="Smart search">
                                 </div>
                             </div>
+
+                            <div class="features-service__group flex-column">
+                                <p class="information-description">Получай глубокое понимание ситуации, анализируя данные и составляя подробные отчеты. Благодаря этому, ты сможешь не просто следовать за конкурентами, а опережать их, прогнозируя тренды и принимая правильные решения.</p>
+                                
+                                <button type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
+                                    <img src="../assets/icons/chart-star-circle-white.svg" alt="SEO icon">
+                                    
+                                    <p>Начать отслеживать</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="company-product-2" class="company-product">
+                        <div class="company-product__ellipse-1"></div>
+                        <div class="company-product__ellipse-2"></div>
+                        <div class="company-product__ellipse-3"></div>
+
+                        <div class="company-product__information">
+                            <div class="features-service__container flex-row flex-align-center flex-justify-between">
+                                <div class="features-service__information flex-column">
+                                    <header class="information-header flex-row flex-align-center">
+                                        <img src="../assets/images/features/features-2.svg" alt="Features service icon">
+        
+                                        <p>Формирование отчётов на базе AI-технологий</p>
+                                    </header>
+        
+                                    <h3 class="information-title">Отслеживайте свою производительность и создавайте отчеты с полезной информацией</h3>
+        
+                                    <p id="information-description-desktop" class="information-description">Следите за своим прогрессом, отслеживая ключевые показатели и собирая данные о своей производительности. Превратите эти данные в ценную информацию, создавая информативные отчеты, которые помогут вам оптимизировать свою работу и достичь лучших результатов.</p>
+                                
+                                    <button id="information-button-desktop" type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
+                                        <img src="../assets/icons/chip-microchip-square-signal-white.svg" alt="SEO icon">
+                                        
+                                        <p>Начать отслеживать</p>
+                                    </button>
+                                </div>
+        
+                                <div class="features-service__image">
+                                    <img src="../assets/images/features/features-service-2.png" alt="Smart search">
+                                </div>
+                            </div>
+
+                            <div class="features-service__group flex-column">
+                                <p class="information-description block-2-description">Следите за своим прогрессом, отслеживая ключевые показатели и собирая данные о своей производительности. Превратите эти данные в ценную информацию, создавая информативные отчеты, которые помогут вам оптимизировать свою работу и достичь лучших результатов.</p>
+                                
+                                <button type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
+                                    <img src="../assets/icons/chip-microchip-square-signal-white.svg" alt="Analyze icon">
+                                    
+                                    <p>Начать отслеживать</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="company-product-3" class="company-product">
+                        <div class="company-product__ellipse-1"></div>
+                        <div class="company-product__ellipse-2"></div>
+                        <div class="company-product__ellipse-3"></div>
+
+                        <div class="company-product__information">
+                            <div class="features-service__container flex-row flex-align-center flex-justify-between">
+                                <div class="features-service__information flex-column">
+                                    <header class="information-header flex-row flex-align-center">
+                                        <img src="../assets/images/features/features-3.svg" alt="Features service icon">
+        
+                                        <p>Мониторинг и повышение репутации</p>
+                                    </header>
+        
+                                    <h3 class="information-title">Держите руку на пульсе:<br>оперативное получение информации и последующая работа с ней — залог высокой репутации вашей компании</h3>
+        
+                                    <p id="information-description-desktop" class="information-description">Будьте в курсе всех изменений и событий — оперативное получение актуальной информации и ее грамотная обработка – это ключ к успеху. Только так ваша компания сможет быстро реагировать на вызовы, уверенно двигаться к своим целям и завоевывать уважение партнеров.</p>
+                                
+                                    <button id="information-button-desktop" type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
+                                        <img src="../assets/icons/message-text-edit-white.svg" alt="SEO icon">
+                                        
+                                        <p>Начать отслеживать</p>
+                                    </button>
+                                </div>
+        
+                                <div class="features-service__image">
+                                    <img src="../assets/images/features/features-service-3.png" alt="Smart search">
+                                </div>
+                            </div>
+
+                            <div class="features-service__group flex-column">
+                                <p class="information-description">Будьте в курсе всех изменений и событий — оперативное получение актуальной информации и ее грамотная обработка – это ключ к успеху. Только так ваша компания сможет быстро реагировать на вызовы, уверенно двигаться к своим целям и завоевывать уважение партнеров.</p>
+                                
+                                <button type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
+                                    <img src="../assets/icons/message-text-edit-white.svg" alt="Message icon">
+                                    
+                                    <p>Начать отслеживать</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="company-product-4" class="company-product">
+                        <div class="company-product__ellipse-1"></div>
+                        <div class="company-product__ellipse-2"></div>
+                        <div class="company-product__ellipse-3"></div>
+
+                        <div class="company-product__information">
+                            <div class="features-service__container flex-row flex-align-center flex-justify-between">
+                                <div class="features-service__information flex-column">
+                                    <header class="information-header flex-row flex-align-center">
+                                        <img src="../assets/images/features/features-4.svg" alt="Features service icon">
+        
+                                        <p>Генерация идей и креативных решений</p>
+                                    </header>
+        
+                                    <h3 class="information-title">Идеи на любой вкус:<br>от смелых до классических</h3>
+        
+                                    <p id="information-description-desktop" class="information-description">С помощью искусственного интеллекта собственной разработки мы способны анализировать потребности вашей ЦА и генерировать для вас лучшие идеи по продвижению, развитию и масштабированию своего дела.</p>
+                                
+                                    <button id="information-button-desktop" type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
+                                        <img src="../assets/icons/brain-white.svg" alt="SEO icon">
+                                        
+                                        <p>Генерировать</p>
+                                    </button>
+                                </div>
+        
+                                <div class="features-service__image">
+                                    <img src="../assets/images/features/features-service-4.png" alt="Smart search">
+                                </div>
+                            </div>
+
+                            <div class="features-service__group flex-column">
+                                <p class="information-description block-2-description">С помощью искусственного интеллекта собственной разработки мы способны анализировать потребности вашей ЦА и генерировать для вас лучшие идеи по продвижению, развитию и масштабированию своего дела.</p>
+                                
+                                <button type="button" class="button button-primary flex-row flex-center-center" onclick="redirectToRegister()">
+                                    <img src="../assets/icons/chip-microchip-square-signal-white.svg" alt="Analyze icon">
+                                    
+                                    <p>Генерировать</p>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div> 
+            </section>
+
+            <!-- Benefits -->
+            <section class="company-benefits">
+                <div class="company-benefits__ellipse-1"></div>
+
+                <div class="company-benefits__container flex-row flex-center-center">
+                    <div class="company-benefits__information flex-column">
+                        <p class="information-title">Какую <span class="gradient-1">пользу</span><br>мы <span class="gradient-2">приносим</span>?</p>
+
+                        <ul class="information-items flex-column">
+                            <li class="information-item flex-row flex-align-center">
+                                <img class="information-item__icon" src="../assets/icons/company/company-benefit-1.svg" alt="Company benefit icon">
+
+                                <p class="information-item__label">Анализ и сегментация аудитории</p>
+                            </li>
+
+                            <li class="information-item flex-row flex-align-center">
+                                <img class="information-item__icon" src="../assets/icons/company/company-benefit-2.svg" alt="Company benefit icon">
+
+                                <p class="information-item__label">Оптимизация контента</p>
+                            </li>
+
+                            <li class="information-item flex-row flex-align-center">
+                                <img class="information-item__icon" src="../assets/icons/company/company-benefit-3.svg" alt="Company benefit icon">
+
+                                <p class="information-item__label">Управление репутаций</p>
+                            </li>
+
+                            <li class="information-item flex-row flex-align-center">
+                                <img class="information-item__icon" src="../assets/icons/company/company-benefit-4.svg" alt="Company benefit icon">
+
+                                <p class="information-item__label">Прогнозирование трендов</p>
+                            </li>
+
+                            <li class="information-item flex-row flex-align-center">
+                                <img class="information-item__icon" src="../assets/icons/company/company-benefit-5.svg" alt="Company benefit icon">
+
+                                <p class="information-item__label">Эффективное развитие бренда</p>
+                            </li>
+
+                            <li class="information-item flex-row flex-align-center">
+                                <p class="information-item__label">И многое другое...</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <img class="company-benefits__image" src="../assets/images/company/company-benefit.svg" alt="Company benefits">
+                </div>
             </section>
         </main>
 
@@ -440,6 +635,7 @@
     <!-- Scripts -->
     <script src="../scripts/menu.js"></script>
     <script src="../scripts/routing.js"></script>
+    <script src="../scripts/company.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
