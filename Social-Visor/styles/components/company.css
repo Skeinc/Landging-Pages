@@ -464,6 +464,7 @@
         gap: 24px;
 
         .information-title {
+            width: 80%;
             font-size: 40px;
             font-weight: 700;
             line-height: 47px;
@@ -510,8 +511,274 @@
     }
 
     .company-benefits__image {
-        width: auto;
+        width: 516px;
         height: 400px;
+        position: relative;
+        z-index: 2;
+        flex-shrink: 0;
+        transition: all 0.3s ease;
+
+        .image-icon {
+            position: absolute;
+            object-fit: cover;
+        }
+
+        .image-photo {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+
+        #image-icon-1 {
+            top: 8.5%;
+            left: 0px;
+            z-index: 4;
+            animation: animationScale 3s ease-in-out infinite;
+        }
+
+        #image-icon-2 {
+            top: 1%;
+            left: 45%;
+            z-index: 4;
+            animation: animationScale 5s ease-in-out infinite;
+        }
+
+        #image-icon-3 {
+            top: 47%;
+            left: 12%;
+            z-index: 4;
+            animation: animationScale 4s ease-in-out infinite;
+        }
+
+        #image-icon-4 {
+            top: 50%;
+            right: 0%;
+            z-index: 4;
+            animation: animationScale 5s ease-in-out infinite;
+        }
+
+        #image-icon-5 {
+            bottom: 3%;
+            left: 53%;
+            z-index: 4;
+            animation: animationScale 6s ease-in-out infinite;
+        }
+
+        #image-photo-1 {
+            width: 265px;
+            height: 124px;
+            top: 14%;
+            left: 0px;
+            z-index: 3;
+            animation: animationRotateRight 8s ease-in-out infinite;
+        }
+
+        #image-photo-2 {
+            width: 230px;
+            height: 200px;
+            top: 0px;
+            right: 0px;
+            z-index: 3;
+            animation: animationRotateLeft 8s ease-in-out infinite;
+        }
+
+        #image-photo-3 {
+            width: 146px;
+            height: 200px;
+            bottom: 0px;
+            left: 23%;
+            z-index: 3;
+            animation: animationRotateRight 10s ease-in-out infinite;
+        }
+
+        #image-photo-4 {
+            width: 191;
+            height: 124px;
+            bottom: 15%;
+            right: 9%;
+            z-index: 3;
+            animation: animationRotateLeft 10s ease-in-out infinite;
+        }
+    }
+}
+
+.company-advantages {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.01);
+    position: relative;
+    font-family: Gilroy;
+    color: var(--dark-color);
+}
+
+.company-advantages__ellipse-1 {
+    position: absolute;
+    width: 630px;
+    height: 630px;
+    left: 590px;
+    top: -89px;
+    background: rgba(157, 0, 255, 0.07);
+    filter: blur(130px);
+    border-radius: 50%;
+    -webkit-filter: blur(130px);
+    -moz-filter: blur(130px);
+    will-change: transform;
+    z-index: 1;
+}
+
+.company-advantages__container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 80px 23%;
+    align-items: center;
+    gap: 96px;
+    z-index: 3;
+
+    .company-advantages__information {
+        width: 461px;
+        height: auto;
+        gap: 24px;
+
+        .information-title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 47px;
+            text-align: left;
+
+            .gradient-1 {
+                background: linear-gradient(85.63deg, #53007F 0%, #A70096 50.48%, #FF005E 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+
+            .gradient-2 {
+                background: linear-gradient(85.63deg, #1C007F 0%, #A70096 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+
+        .information-items {
+            width: 100%;
+            height: auto;
+            gap: 14px;
+
+            .information-item {
+                width: 100%;
+                height: auto;
+                gap: 10px;
+
+                .information-item__icon {
+                    width: 24px;
+                    height: 24px;
+                }
+                
+                .information-item__label {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 23px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .company-advantages__image {
+        width: 516px;
+        height: 400px;
+        position: relative;
+        z-index: 2;
+        flex-shrink: 0;
+        transition: all 0.3s ease;
+
+        .image-icon {
+            position: absolute;
+            object-fit: cover;
+        }
+
+        .image-photo {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+
+        #image-icon-1 {
+            top: 8.5%;
+            left: 0px;
+            z-index: 4;
+            animation: animationScale 3s ease-in-out infinite;
+        }
+
+        #image-icon-2 {
+            top: 1%;
+            left: 45%;
+            z-index: 4;
+            animation: animationScale 5s ease-in-out infinite;
+        }
+
+        #image-icon-3 {
+            top: 47%;
+            left: 12%;
+            z-index: 4;
+            animation: animationScale 4s ease-in-out infinite;
+        }
+
+        #image-icon-4 {
+            top: 50%;
+            right: 0%;
+            z-index: 4;
+            animation: animationScale 5s ease-in-out infinite;
+        }
+
+        #image-icon-5 {
+            bottom: 3%;
+            left: 53%;
+            z-index: 4;
+            animation: animationScale 6s ease-in-out infinite;
+        }
+
+        #image-photo-1 {
+            width: 265px;
+            height: 124px;
+            top: 14%;
+            left: 0px;
+            z-index: 3;
+            animation: animationRotateRight 8s ease-in-out infinite;
+        }
+
+        #image-photo-2 {
+            width: 230px;
+            height: 200px;
+            top: 0px;
+            right: 0px;
+            z-index: 3;
+            animation: animationRotateLeft 8s ease-in-out infinite;
+        }
+
+        #image-photo-3 {
+            width: 146px;
+            height: 200px;
+            bottom: 0px;
+            left: 23%;
+            z-index: 3;
+            animation: animationRotateRight 10s ease-in-out infinite;
+        }
+
+        #image-photo-4 {
+            width: 191;
+            height: 124px;
+            bottom: 15%;
+            right: 9%;
+            z-index: 3;
+            animation: animationRotateLeft 10s ease-in-out infinite;
+        }
     }
 }
 
@@ -525,6 +792,10 @@
     }
 
     .company-benefits__container {
+        padding: 80px 10%;
+    }
+
+    .company-advantages__container {
         padding: 80px 10%;
     }
 }
@@ -549,6 +820,63 @@
                     .information-item__label {
                         font-size: 20px;
                         font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .company-advantages__container {
+        padding: 80px 64px;
+
+        .company-advantages__information {
+            width: 454px;
+    
+            .information-items {
+                .information-item {
+                    .information-item__label {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .company-benefits__container {
+        .company-benefits__image {
+            transform: scale(0.8);
+        }
+    }
+
+    .company-advantages__container {
+        .company-advantages__image {
+            transform: scale(0.8);
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .company-advantages__container {
+        gap: 32px;
+        padding: 40px 32px;
+
+        .company-advantages__information {
+            width: auto;
+
+            .information-title {
+                font-size: 32px;
+                line-height: 38px;
+            }
+    
+            .information-items {
+                .information-item {
+                    .information-item__label {
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 21px;
                     }
                 }
             }
@@ -618,6 +946,62 @@
             }
         }
     }
+
+    .company-benefits__container {
+        .company-benefits__image {
+            transform: scale(1);
+            width: 391px;
+            height: 302px;
+
+            #image-photo-1 {
+                width: 200px;
+                height: 94px;
+            }
+    
+            #image-photo-2 {
+                width: 174px;
+                height: 152px;
+            }
+    
+            #image-photo-3 {
+                width: 111px;
+                height: 151px;
+            }
+    
+            #image-photo-4 {
+                width: 145px;
+                height: 94px;
+            }
+        }
+    }
+
+    .company-advantages__container {
+        .company-advantages__image {
+            transform: scale(1);
+            width: 316px;
+            height: 244px;
+
+            #image-photo-1 {
+                width: 162px;
+                height: 76px;
+            }
+    
+            #image-photo-2 {
+                width: 141px;
+                height: 122px;
+            }
+    
+            #image-photo-3 {
+                width: 90px;
+                height: 122px;
+            }
+    
+            #image-photo-4 {
+                width: 117px;
+                height: 76px;
+            }
+        }
+    }
 }
 
 @media (max-width: 920px) {
@@ -640,11 +1024,26 @@
                 }
             }
         }
+    }
 
-        .company-benefits__image {
+    .company-advantages__container {
+        .company-advantages__information {
             width: auto;
-            max-width: 390px;
-            height: auto;
+
+            .information-title {
+                font-size: 24px;
+                line-height: 28px;
+            }
+    
+            .information-items {
+                .information-item {
+                    .information-item__label {
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 19px;
+                    }
+                }
+            }
         }
     }
 }
@@ -698,20 +1097,46 @@
 
         .company-benefits__information {
             min-width: 297px;
+
+            .information-title {
+                width: 100%;
+            }
+        }
+    }
+
+    .company-advantages__container {
+        padding: 32px 24px;
+
+        .company-advantages__information {
+            min-width: 297px;
+
+            .information-title {
+                width: 100%;
+            }
         }
     }
 }
 
-@media (max-width: 762px) {
+@media (max-width: 760px) {
     .company-benefits__container {
         flex-direction: column !important;
     }
+
+    .company-advantages__container {
+        flex-direction: column-reverse !important;
+    }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 460px) {
     .company-benefits__container {
         .company-benefits__image {
-            width: 100%;
+            transform: scale(0.8);
+        }
+    }
+
+    .company-advantages__container {
+        .company-advantages__image {
+            transform: scale(0.8);
         }
     }
 }
@@ -745,5 +1170,56 @@
 
     .company-benefits__container {
         gap: 16px;
+    }
+
+    .company-advantages__container {
+        gap: 16px;
+    }
+}
+
+@keyframes animationScale {
+    0%, 100% {
+        transform: translate(0, 0);
+        scale: 1;
+    }
+    25% {
+        transform: translate(5px, -5px);
+    }
+    50% {
+        transform: translate(-5px, 5px);
+        scale: 1.1;
+    }
+    75% {
+        transform: translate(3px, -3px);
+    }
+}
+
+@keyframes animationRotateRight {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(10px, 0px);
+    }
+    50% {
+        transform: translate(0px, -5px) rotate(2deg);
+    }
+    75% {
+        transform: translate(-5px, -3px);
+    }
+}
+
+@keyframes animationRotateLeft {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(0px, 10px);
+    }
+    50% {
+        transform: translate(0px, -5px) rotate(-2deg);
+    }
+    75% {
+        transform: translate(-5px, -3px);
     }
 }
