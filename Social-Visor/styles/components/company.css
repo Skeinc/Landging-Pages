@@ -782,6 +782,226 @@
     }
 }
 
+.company-welcome {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.01);
+    position: relative;
+    font-family: Gilroy;
+    color: var(--dark-color);
+}
+
+.company-welcome__ellipse-1 {
+    position: absolute;
+    width: 630px;
+    height: 630px;
+    left: 1319px;
+    top: 32px;
+    background: rgba(0, 115, 255, 0.07);
+    filter: blur(130px);
+    border-radius: 50%;
+    -webkit-filter: blur(130px);
+    -moz-filter: blur(130px);
+    will-change: transform;
+    z-index: 1;
+}
+
+.company-welcome__container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 80px 0px;
+    gap: 48px;
+    z-index: 3;
+    box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+
+    .company-welcome__header {
+        width: 100%;
+        height: auto;
+        padding: 0px 23%;
+        gap: 16px;
+        transition: all 0.3s ease;
+
+        .header-title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 47px;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .header-description {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 23px;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .header-controller {
+            width: 100%;
+        }
+    }
+
+    .company-welcome__gallery {
+        width: max-content;
+        height: auto;
+        position: relative;
+        display: flex;
+        white-space: nowrap;
+        align-items: stretch !important;
+        gap: 16px;
+        will-change: transform;
+
+        .gallery-items {
+            flex-shrink: 0;
+            display: flex;
+            gap: 16px;
+        }
+    }
+
+    .gallery-marquee {
+        will-change: transform;
+        animation: scrollGallery 26s linear infinite;
+    }
+
+    .gallery-photo {
+        width: auto;
+        height: 310px;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+
+        .gallery-photo__image {
+            width: auto;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+        }
+    }
+}
+
+#company-reviews-ellipse-1 {
+    position: absolute;
+    width: 630px;
+    height: 630px;
+    left: 590px;
+    top: -89px;
+    background: rgba(157, 0, 255, 0.07);
+    filter: blur(130px);
+    border-radius: 50%;
+    -webkit-filter: blur(130px);
+    -moz-filter: blur(130px);
+    will-change: transform;
+    z-index: 1;
+}
+
+#company-reviews {
+    padding: 80px 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.company-contacts {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.01);
+    position: relative;
+    font-family: Gilroy;
+    color: var(--dark-color);
+}
+
+.company-contacts__ellipse-1 {
+    position: absolute;
+    width: 726px;
+    height: 726px;
+    left: 542px;
+    top: -137px;
+    background: rgba(157, 0, 255, 0.07);
+    filter: blur(130px);
+    border-radius: 50%;
+    -webkit-filter: blur(130px);
+    -moz-filter: blur(130px);
+    will-change: transform;
+    z-index: 1;
+}
+
+.company-contacts__container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0px 23% 80px 23%;
+    gap: 32px;
+    z-index: 3;
+    transition: all 0.3s ease;
+
+    .contacts-title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 46.96px;
+        text-align: left;
+    }
+
+    .contacts-controllers {
+        width: 100%;
+        height: auto;
+        gap: 48px;
+        align-items: end;
+
+        .controller-area  {
+            width: auto;
+            height: auto;
+            gap: 8px;
+
+            .controller-area__label {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 21.13px;
+                letter-spacing: 0.02em;
+                text-align: left;
+            }
+
+            .controller-area__button {
+                width: auto;
+                height: 52px;
+                appearance: none;
+                outline: none;
+                border: none;
+                border-radius: 4px;
+                padding: 14px 24px 14px 24px;
+                background-color: var(--white-color);
+                gap: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    border-radius: 8px;
+                    transform: scale(1.1);
+                }
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                    object-fit: cover;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 21.13px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1920px) {
     .company-hero__container {
         padding: 80px 10% 30px 10%;
@@ -797,6 +1017,17 @@
 
     .company-advantages__container {
         padding: 80px 10%;
+    }
+
+    .company-welcome__container {
+    
+        .company-welcome__header {
+            padding: 0px 10%;
+        }
+    }
+
+    .company-contacts__container {
+        padding: 0px 10% 80px 10%;
     }
 }
 
@@ -837,6 +1068,38 @@
                     .information-item__label {
                         font-size: 20px;
                         font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .company-welcome__container {
+        .company-welcome__header {
+            padding: 0px 64px;
+    
+            .header-description {
+                font-weight: 500;
+            }
+    
+            .header-controller {
+                width: 100%;
+            }
+        }
+    }
+
+    .company-contacts__container {
+        padding: 0px 64px 80px 64px;
+
+        .contacts-controllers {
+            .controller-area  {
+                .controller-area__label {
+                    font-weight: 600;
+                }
+    
+                .controller-area__button {
+                    p {
+                        font-weight: 500;
                     }
                 }
             }
@@ -920,6 +1183,51 @@
                 }
             }
         }
+    }
+
+    .company-welcome__container {
+        padding: 40px 0px;
+    
+        .company-welcome__header {
+            padding: 0px 32px;
+
+            .header-title {
+                font-size: 32px;
+                line-height: 38px;
+            }
+        }
+
+        .company-welcome__gallery {
+            .gallery-photo {
+                height: 270px;
+            }
+        }
+    }
+
+    .company-contacts__container {
+        padding: 0px 32px 40px 32px;
+
+        .contacts-title {
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        .contacts-controllers {
+            width: 100%;
+            height: auto;
+            gap: 16px;
+            align-items: end;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .company-reviews__ellipse-1 {
+        left: 210px;
+    }
+
+    .company-contacts__ellipse-1 {
+        left: 162px;
     }
 }
 
@@ -1115,6 +1423,43 @@
             }
         }
     }
+
+    .company-welcome__container {
+        padding: 32px 0px;
+        gap: 32px;
+    
+        .company-welcome__header {
+            padding: 0px 24px;
+
+            .header-title {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+
+        .company-welcome__gallery {
+            .gallery-photo {
+                height: 220px;
+            }
+        }
+    }
+
+    .company-contacts__container {
+        padding: 0px 24px 32px 24px;
+
+        .contacts-title {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    .company-reviews__ellipse-1 {
+        left: 210px;
+    }
+
+    .company-contacts__ellipse-1 {
+        left: 162px;
+    }
 }
 
 @media (max-width: 760px) {
@@ -1137,6 +1482,55 @@
     .company-advantages__container {
         .company-advantages__image {
             transform: scale(0.8);
+        }
+    }
+
+    .company-welcome__container {
+        padding: 24px 0px;
+        gap: 16px;
+    
+        .company-welcome__header {
+            padding: 0px 16px;
+
+            .header-title {
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            .header-description {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    .company-contacts__container {
+        .contacts-controllers {
+            gap: 16px;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column !important;
+    
+            .controller-area  {
+                width: 100%;
+
+                .controller-area__label {
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 14px;
+                }
+    
+                .controller-area__button {
+                    width: 100%;
+                    justify-content: start;
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 16px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1174,6 +1568,41 @@
 
     .company-advantages__container {
         gap: 16px;
+    }
+
+    .company-welcome__container {
+        padding: 24px 0px;
+        gap: 16px;
+    
+        .company-welcome__header {
+            padding: 0px 16px;
+
+            .header-title {
+                font-size: 16px;
+                line-height: 18px;
+            }
+
+            .header-description {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+
+        .company-welcome__gallery {
+            .gallery-photo {
+                height: 130px;
+            }
+        }
+    }
+
+    .company-contacts__container {
+        padding: 0px 16px 24px 16px;
+        gap: 16px;
+
+        .contacts-title {
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
 }
 
@@ -1221,5 +1650,15 @@
     }
     75% {
         transform: translate(-5px, -3px);
+    }
+}
+
+@keyframes scrollGallery {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 16px));
     }
 }
