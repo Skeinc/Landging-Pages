@@ -4,7 +4,8 @@ const ROUTES = {
     overview: '/index.html',
     products: '/pages/products.html',
     tariffs: '/pages/tariffs.html',
-    company: '/pages/company.html'
+    company: '/pages/company.html',
+    faq: '/pages/faq.html',
 }
 
 function redirectToLogin() {
@@ -36,5 +37,5 @@ function redirectToBlog() {
 }
 
 function redirectToFAQ() {
-    window.location.href = '';
+    window.location.href = ROUTES.faq;
 }
