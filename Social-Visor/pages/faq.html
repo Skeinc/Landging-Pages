@@ -273,8 +273,243 @@
                 </div>
             </section>
 
-            <!-- Questions -->
-            <section class="faq-questions"></section>
+            <!-- Overview -->
+            <section class="faq-overview flex-row">
+                <div class="faq-overview__ellipse-1"></div>
+
+                <ul class="faq-overview__topics flex-column">
+                    <!-- Shared questions -->
+                    <li class="topic-item flex-row flex-align-center" onclick="toggleActiveTopic(0)">
+                        <img class="topic-item__icon" src="../assets/icons/faq/shared-questions.svg" alt="Topic icon">
+
+                        <p class="topic-item__label">Общие вопросы</p>
+                    </li>
+
+                    <!-- Tariffs -->
+                    <li class="topic-item flex-row flex-align-center" onclick="toggleActiveTopic(1)">
+                        <img class="topic-item__icon" src="../assets/icons/faq/tariffs.svg" alt="Topic icon">
+
+                        <p class="topic-item__label">Тарифы</p>
+                    </li>
+
+                    <!-- Subscription management -->
+                    <li class="topic-item flex-row flex-align-center" onclick="toggleActiveTopic(2)">
+                        <img class="topic-item__icon" src="../assets/icons/faq/subscription-management.svg" alt="Topic icon">
+
+                        <p class="topic-item__label">Управление подпиской</p>
+                    </li>
+
+                    <!-- Service settings -->
+                    <li class="topic-item flex-row flex-align-center" onclick="toggleActiveTopic(3)">
+                        <img class="topic-item__icon" src="../assets/icons/faq/service-settings.svg" alt="Topic icon">
+
+                        <p class="topic-item__label">Настройка сервисов</p>
+                    </li>
+
+                    <!-- Payment and checks -->
+                    <li class="topic-item flex-row flex-align-center" onclick="toggleActiveTopic(4)">
+                        <img class="topic-item__icon" src="../assets/icons/faq/payments-and-checks.svg" alt="Topic icon">
+
+                        <p class="topic-item__label">Оплата и счета</p>
+                    </li>
+
+                    <!-- License -->
+                    <li class="topic-item flex-row flex-align-center" onclick="toggleActiveTopic(5)">
+                        <img class="topic-item__icon" src="../assets/icons/faq/license.svg" alt="Topic icon">
+
+                        <p class="topic-item__label">Условия использования</p>
+                    </li>
+
+                    <!-- Feedback -->
+                    <li class="topic-item flex-row flex-align-center" onclick="toggleActiveTopic(6)">
+                        <img class="topic-item__icon" src="../assets/icons/faq/feedback.svg" alt="Topic icon">
+
+                        <p class="topic-item__label">Обратная связь</p>
+                    </li>
+                </ul>
+
+                <ul id="questions-by-topic-1" class="faq-overview__questions flex-column">
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(0)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как сделать поиск по картинке на определенном ресурсе?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(1)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как отменить подписку?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(2)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как сделать поиск по картинке на определенном ресурсе?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(3)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Почему у меня не работает?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(4)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как настроить уведомления на моем устройстве?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(5)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как создать новую учетную запись?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(6)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как настроить язык интерфейса?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(7)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как восстановить пароль?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(8)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как добавить изображение в мою галерею?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(9)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как изменить настройки приватности?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(10)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как настроить автоматическое обновление приложения?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(11)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как добавить контакт в мой список друзей?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(12)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как установить темную тему на приложении?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(13)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как настроить уведомления о новых сообщениях?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+
+                    <li class="question-item flex-column" onclick="toggleQuestionVisibleStatus(14)">
+                        <div class="question-item__ask flex-row flex-align-center">
+                            <p class="ask-label">Как создать резервную копию данных на облаке?</p>
+
+                            <img class="ask-icon" src="../assets/icons/faq/question-arrow.svg" alt="Arrow icon">
+                        </div>
+
+                        <div class="question-item__answer">
+                            <p class="answer-value">И нет сомнений, что сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения, а значит, должны быть описаны максимально подробно. Таким образом, реализация намеченных плановых заданий требует анализа укрепления моральных ценностей. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности требует анализа кластеризации усилий. Сложно сказать, почему некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть своевременно верифицированы.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
         </main>
 
         <!-- Footer -->
@@ -365,6 +600,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="../scripts/faq.js"></script>
     <script src="../scripts/menu.js"></script>
     <script src="../scripts/routing.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
