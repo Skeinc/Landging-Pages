@@ -6,6 +6,7 @@ const ROUTES = {
     tariffs: '/pages/tariffs.html',
     company: '/pages/company.html',
     faq: '/pages/faq.html',
+    offer: '/pages/offer.html',
 }
 
 function redirectToLogin() {
@@ -38,4 +39,7 @@ function redirectToBlog() {
 
 function redirectToFAQ() {
     window.location.href = ROUTES.faq;
+}
+function redirectToOffer() {
+    window.location.href = ROUTES.offer;
 }
