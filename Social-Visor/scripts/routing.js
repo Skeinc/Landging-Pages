@@ -1,12 +1,11 @@
 const ROUTES = {
     login: 'https://app.socialvisor.ru/login',
     register: 'https://app.socialvisor.ru/register',
-    overview: '/index.html',
+    overview: 'index.html',
     products: '/pages/products.html',
     tariffs: '/pages/tariffs.html',
     company: '/pages/company.html',
-    faq: '/pages/faq.html',
-    offer: '/pages/offer.html',
+    faq: '/pages/faq.html'
 }
 
 function redirectToLogin() {
@@ -33,13 +32,6 @@ function redirectToCompany() {
     window.location.href = ROUTES.company;
 }
 
-function redirectToBlog() {
-    window.location.href = '';
-}
-
 function redirectToFAQ() {
     window.location.href = ROUTES.faq;
-}
-function redirectToOffer() {
-    window.location.href = ROUTES.offer;
 }
