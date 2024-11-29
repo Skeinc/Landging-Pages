@@ -19,3 +19,11 @@
 - **JavaScript**: Обработка интерактивных элементов.
 - **AOS (Animate on Scroll)**: Анимации при прокрутке страницы.
 - **Three.js**: Работа с 3D графикой и анимацией.
+
+## Роутинг
+
+- [Главная](https://skeinc.github.io/Landing-Pages/Social-Visor/);
+- [Продукты](https://skeinc.github.io/Landing-Pages/Social-Visor/pages/products.html);
+- [Тарифы](https://skeinc.github.io/Landing-Pages/Social-Visor/pages/tariffs.html);
+- [Компания](https://skeinc.github.io/Landing-Pages/Social-Visor/pages/company.html);
+- [FAQ](https://skeinc.github.io/Landing-Pages/Social-Visor/pages/faq.html);
